@@ -15,4 +15,3 @@ jobs:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
           skip-publish: true
-          working-dir: ./blog
