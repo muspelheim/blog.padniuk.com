@@ -34,6 +34,10 @@ const Layout = ({ location, title, children }) => {
         <a href="https://blog.padniuk.com">Evgeny Padniuk</a>
       </footer>
 
+        {/*todo: move*/}
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+
         <ScrollToTop showUnder={160}>
             <FontAwesomeIcon icon={faArrowAltCircleUp}  size="3x" />
         </ScrollToTop>

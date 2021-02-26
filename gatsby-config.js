@@ -46,6 +46,18 @@ module.exports = {
             },
           },
           `gatsby-remark-autolink-headers`,
+          `gatsby-plugin-instagram-embed`,
+          {
+            resolve: `gatsby-remark-embedder`,
+            options: {
+              customTransformers: [
+                // Your custom transformers
+              ],
+              services: {
+                // The service-specific options by the name of the service
+              },
+            },
+          },
           {
             resolve: "gatsby-remark-embed-video",
             options: {
