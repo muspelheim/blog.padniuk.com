@@ -71,7 +71,6 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
               linkImagesToOriginal: false,
             },
           },
@@ -97,7 +96,6 @@ module.exports = {
         trackingId: `UA-190310634-2`,
       },
     },
-    `gatsby-plugin-feed`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

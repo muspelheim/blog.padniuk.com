@@ -1,14 +1,13 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
+  const tags = post.frontmatter.tags
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
@@ -25,7 +24,15 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <div className="blog-post-tags-wrapper">
+              <p className="blog-post-date"> 📅 {post.frontmatter.date}</p>
+              <p>
+                  <span className="blog-post-tags-icon">🏷</span>️
+                  {tags && tags.map(t => (
+                      <span className="blog-post-tag-item" key={`${t}`}>#{t}{'\u00A0'}</span>
+                  ))}
+              </p>
+          </div>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -85,8 +92,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM, YYYY")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
