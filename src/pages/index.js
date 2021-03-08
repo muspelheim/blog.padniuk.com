@@ -2,6 +2,9 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+//TODO: recognize user language
+import { getUserLangKey } from 'ptz-i18n'
+
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -66,17 +69,23 @@ const BlogIndex = ({ data, location }) => {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
+  query BlogRuQuery {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+    sort: { fields: [frontmatter___date], order: DESC }
+    filter: {
+        fields: { langKey: { regex: "/(ru|any)/" } }
+    }
+    ) {
       nodes {
         excerpt
         fields {
           slug
+          langKey
         }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")

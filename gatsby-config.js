@@ -1,9 +1,7 @@
+const siteMetadata = require('./src/data/siteMetadata');
+
 module.exports = {
-  siteMetadata: {
-    title: `Мой блог`,
-    description: `Персональный блог о том, что я хочу рассказать`,
-    siteUrl: `https://blog.padniuk.com/`,
-  },
+  siteMetadata,
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
@@ -90,6 +88,32 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'ru',
+        useLangKeyLayout: false,
+        prefixDefault: true,
+        pagesPaths: [`${__dirname}/content/blog`, `${__dirname}/content/pages`],
+        markdownRemark: {
+          postPage: 'src/templates/blog-post.js',
+          query: `
+          {
+            allMarkdownRemark {
+              edges {
+                node {
+                  fields {
+                    slug,
+                    langKey
+                  }
+                }
+              }
+            }
+          }
+        `
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
