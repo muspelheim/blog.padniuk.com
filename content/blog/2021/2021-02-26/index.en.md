@@ -37,13 +37,13 @@ So, to make chocolates will need such equipment:
 - A snous-thermometer or infrared thermometer (I have Chinese for $10)
 - Submersible blender (injected dye into cocoa butter)
 - Microwave (topping chocolate 10-second approaches in it)
-- Hairdryer (if the temperature of the mould is low, you need to walk with a hair dryer and warm up)
+- Hairdryer (if the temperature of the mould is low, you need to walk with a hairdryer and warm-up)
 - Plastic chocolate containers
 - Pastry bags for toppings and chocolate
 - Plastic containers for painted cocoa butter
 - Glass or metal temper bowl
-- Walking brushes
-- Baking paper (we will pour the remaining chocolate from the mold)
+- Paint brushes
+- Baking paper (we will pour the remaining chocolate from the mould)
 - Spatula (can be construction but without rust and chrome, or confectionery)
 
 And such ingredients:
@@ -55,18 +55,18 @@ And such ingredients:
 - Sugar
 - Glucose syrup
 
-The thermometer is very important, because in order for the chocolate to be in the "condition", it needs to be melted and re-formed crystal structure - this process is called tempering.
+The thermometer is very important because, in order for the chocolate to be in the "condition", it needs to be melted and re-formed crystal structure - this process is called tempering.
 
 Charts of temperature for different types of chocolate can be seen in the picture below, the main chocolate manufacturers indicate these markings on the packages:
 
  ![There graph in Fahrenheits](./../../../assets/posts/2021-02-26/media/4967a850832ac36561e47db8e6f4a3c226dcf719a225f9223d6859a514773438.jpg)
 
- Roughly speaking, you need to melt in the microwave chocolate to a temperature of 45 degrees Celsius, quickly cool in a metal/glass dish to 27 degrees, and warm up to a temperature of 29-31 degrees (depending on the type of chocolate) to work (because at 27 degrees the chocolate mass is already quite thick and the body of candy will be thick).
+Roughly speaking, you need to melt in the microwave chocolate to a temperature of 45C degrees Celsius, quickly cool in a metal/glass dish to 27C degrees, and warm up to a temperature of 29-31C degrees (depending on the type of chocolate) to work (because at 27C degrees the chocolate mass is already quite thick and the body of candy will be thick).
 
- The temperature in the room should be **18-20** degrees to work with chocolate, at other temperatures the chocolate will be worse to crystallize and the result will be worse.
+The temperature in the room should be **18-20C** degrees to work with chocolate, at other temperatures the chocolate will be worse to crystallize and the result will be worse.
  
- You need to work in nitrile gloves, so as not to leave fingerprints on the mould and not to smear hands in an oil.
- 
+You need to work in nitrile gloves, so as not to leave fingerprints on the mould and not to smear hands in cocoa butter.
+
  ### Step 1: Polycarbonate Moulds
   ![Moulds like this](./../../../assets/posts/2021-02-26/media/cd1c72554fc0a316762c71d7c997bbf31d7930f78e035e2eb7fe0f2e61d011f2.jpg)
 
@@ -79,11 +79,11 @@ When this is done, the shape is ready to be stained.
 ### Step 2: Cocoa Butter
   ![](./../../../assets/posts/2021-02-26/media/458b484b62927477c18d5617922658075fcd16f55c7f77eb6f31bc7dd92e55b1.jpg)
 
-Cocoa butter for work will suit in essence anyone.
+You can buy any cocoa butter. There are lot of manufacturers, such as Callebaut, Cacao Barry, CherRubbere, etc.
 
-Cocoa butter is colorless, translucent. To work it needs to be painted in the desired colors. To stain you need 100 grams of oil, 5 grams of fat-soluble dye.
+Cocoa butter is colorless, translucent. To work it needs to be painted in the desired colors. To stain you need 100 grams of cocoa butter, 5 grams of fat-soluble dye.
 
-Since chocolate contains a percentage of cocoa butter, the principle of working with cocoa butter is similar. To start in the microwave, melt the cocoa butter to a temperature of 50-55 degrees Celsius. Pour the necessary amount of dye into the oil and punch through with a blender. I recommend pouring in and punching a little bit, controlling the color. After breaking through, the oil must be drained through a viscose napkin, so that no dye particles are caught when coloring the mold. Then reheat to 50-55 degrees colored dye and quickly cool to 26-27 degrees in glassware, heat the hairdryer to 29-30 degrees and can use or pour into plastic containers for storage.
+Since chocolate contains a percentage of cocoa butter, the principle of working with cocoa butter is similar. To start in the microwave, melt the cocoa butter to a temperature of 50-55C degrees Celsius. Pour the necessary amount of dye into the cocoa butter and punch through with a blender. I recommend pouring in and punching a little bit, controlling the color. After breaking through, the cocoa butter must be drained through a viscose napkin, so that no dye particles are caught when coloring the mold. Then reheat to 50-55C degrees colored dye and quickly cool to 26-27C degrees in glassware, heat the hairdryer to 29-30C degrees and can use or pour into plastic containers for storage.
 
   ![I mix a lot of basic color, and then I make the accompanying](./../../../assets/posts/2021-02-26/media/973a0adfc091eb6b30dcd91e7dede4f67089d9a5ce99b58f55c95df5a97ad75b.jpg)
 
@@ -94,26 +94,26 @@ The principle is that we add parts of the base, and see what will be the result,
 
 You can buy ready-made cocoa butter from ChefRubber for 20 bucks for 200 grams, but I recommend making your own coloured cocoa butter.
 
-After cooling down, the oil crystallizes, you can reuse it as many times as you like, just heating in the microwave and tempering as described above.
+After cooling down, the cocoa butter crystallizes, you can reuse it as many times as you like, just heating in the microwave and tempering as described above.
 
-If you want to skip tempering, you can heat the oil for 10 seconds, and watch until the center melts, when the center is melted, remove the oil and stir with a spoon, check if everything is good, you can just drop a drop of oil on a cold ceramic saucer, in a minute the oil should become matte. If the matte does not become, you will not be able to turn away, and will have to crank the steps on heating /remaining as described above.
+If you want to skip tempering, you can heat the cocoa butter for 10 seconds, and watch until the center melts, when the center is melted, remove the cocoa butter and stir with a spoon, check if everything is good, you can just drop a drop of cocoa butter on a cold ceramic saucer, in a minute the cocoa butter should become matte. If the matte does not become, you will not be able to turn away, and will have to crank the steps on heating /remaining as described above.
 
  #### Step 3: Colouring mould by cocoa butter
   ![](./../../../assets/posts/2021-02-26/media/2dfdfd543478561657018ee4dcf09f314de11c78d6552325ded0d12c9557f613.jpg)
  
  Here we do what we want, open creative chakras and do our idea.
 
- **(!!!)** After each color, the cocoa butter on the mould should be crystallized, so that there was no mixing with the already applied colors, for this after applying a certain color you need to wait for a while. You can check with a brush or finger, if the oil does not smear and became matte, you can apply a different color.
+ **(!!!)** After each color, the cocoa butter on the mould should be crystallized, so that there was no mixing with the already applied colors, for this after applying a certain color you need to wait for a while. You can check with a brush or finger, if the cocoa butter does not smear and became matte, you can apply a different color.
 
- Once all the colors are applied, what got out of the cells, on the outside of the mould should be cleaned, so that pieces of painted oil do not get into the chocolate, you can spatula, you can have a paper napkin.
+ Once all the colors are applied, what got out of the cells, on the outside of the mould should be cleaned, so that pieces of painted cocoa butter do not get into the chocolate, you can spatula, you can have a paper napkin.
  
- ![Excess oils that need to be cleaned](./../../../assets/posts/2021-02-26/media/8dccf8fd0c6870fceef3a23ba1bd0057240a38a74f47ff8c67299e57a710c57f.jpg)
+ ![Excess cocoa butters that need to be cleaned](./../../../assets/posts/2021-02-26/media/8dccf8fd0c6870fceef3a23ba1bd0057240a38a74f47ff8c67299e57a710c57f.jpg)
 
  **A couple of useful tricks:**
- - You can buy a toothbrush, dip in oil and spray your fingers on the mold, get points.
+ - You can buy a toothbrush, dip in cocoa butter and spray your fingers on the mold, get points.
  - Dark colors shine noticeably better than light, if you want glitter-glitter, it is better to use dark contrasting colors.
  - Clean sponge for dishes, you can trim and draw it
- - In order for the colors to be brighter, the background should be applied white, because the oil is translucent, there will be a pleasant contrast
+ - In order for the colors to be brighter, the background should be applied white, because the cocoa butter is translucent, there will be a pleasant contrast
 
  ![without white in the background](./../../../assets/posts/2021-02-26/media/8fd81648d5f9cece535067bbc5b071267baacabf085eae7dff70289f61bb9f70.jpg)
  ![Same design, but with white in the background](./../../../assets/posts/2021-02-26/media/0690fd8cebba32c03e1668b419e78a336ffaa972b1ff785cba3b93fc7ff41360.jpg)
@@ -128,7 +128,7 @@ I've already bought a bunch of brushes in a couple of months, which I sometimes 
 ![](./../../../assets/posts/2021-02-26/media/6657ca46c40ec56be8683bce43fe5772cd95d8d398f22c8e9ce203c4867d6085.jpg)
 
 ### Step 4: Fill the chocolate shells
-When the shells is painted, you need to fill the mould with chocolate.
+​When the shells are painted, you need to fill the mould with chocolate.
 
 ![](./../../../assets/posts/2021-02-26/media/76bdbcaf1d073a01b47530a6c1de8351c142c6d3ab95a9fa317d53cdcd8610f8.jpg)
 
@@ -142,7 +142,7 @@ Chocolate in packages is also in calllets (drops).
 
 **It takes about 300g of chocolate to close the mold.**
 
-Take the right amount of chocolate, mix with 5% cocoa butter, put in a micro-wave and intervals of 15-5 seconds melt to a temperature of 45 degrees, after each iteration stir, so that some preeminated part is not overheated.
+Take the right amount of chocolate, mix with 5% cocoa butter, put in a micro-wave and intervals of 15-5 seconds melt to a temperature of 45C degrees, after each iteration stir, so that some preeminated part is not overheated.
 
 Then the container in melted chocolate, put in a container with cold water with pieces of ice (on the principle of a water bath) and stir until the temperature falls to 27 degrees.
 
@@ -152,7 +152,7 @@ Check if everything is OK, you can drop a drop of chocolate on a cold ceramic sa
 
 Chocolate is ready, pour it into a condensed bag or in a collective-drain pour directly from the bowl to the mould caviars. When flooded, you need to knock the shape on the table, creating vibrations to tap the bubbles. Then we turn the shape over **(!!!)** And do not raise until we do all that next, pour the excess chocolate on baking parchment. knock on the mould of a silicone spoon or the type of fact to tap the excess chocolate. With a spatula remove hanging drops of chocolate.
 
-Leave mould to crystallize for 10-30 minutes in a room with a temperature of 18-20 degrees. The inverted mould is left to keep the chocolate from flowing upwards and there is no accumulation of chocolate in the top. So it will drain on the edges evenly.
+Leave mould to crystallize for 10-30 minutes in a room with a temperature of 18-20C degrees. The inverted mould is left to keep the chocolate from flowing upwards and there is no accumulation of chocolate in the top. So it will drain on the edges evenly.
 
 After that, you can put in the refrigerator for further crystallization.
 
@@ -176,7 +176,7 @@ The simplest filling is marzipan. We buy marzipan bread, roll balls, put in a ce
 ![Somehow it's like that](./../../../assets/posts/2021-02-26/media/e670bf040b5ac1e4535143dbf781b606280e61904adc498d6c113bd106863924.jpg)
 
 #### Gianduja
-Another basic filling - **Gianduja** recipe can be seen [here](https://tarasmulticulturaltable.com/secret-recipe-club-gianduja-italian-chocolate-hazelnut-spread/). Before pouring into the mold you need to heat up to 29 degrees, pour, put in the refrigerator to thicken, close the bottom.
+Another basic filling - **Gianduja** recipe can be seen [here](https://tarasmulticulturaltable.com/secret-recipe-club-gianduja-italian-chocolate-hazelnut-spread/). Before pouring into the mold you need to heat up to 29C degrees, pour, put in the refrigerator to thicken, close the bottom.
 ![Almond Gianduja](./../../../assets/posts/2021-02-26/media/ddab2b715130394cbd2e065b61bb9e9224f3f2fcc6567f8fa0573f80a0bca2d3.jpg)
 
 You can use hazelnut, almond, pecan, makadamia and other nuts.
@@ -198,7 +198,7 @@ If without a sugar case, then after filling the mould to close the it you need a
 - 10g cream 33-35%
 
 **Cooking steps:**
-Combine the fruit puree and cream with glucose syrup. Heat to a boil and pour on chocolate. With a submersible blender, we break through to a homogeneous structure. pour into a pastry bag and roll on a cool table. You can store in the refrigerator, before filling the mould heated to 29-30 degrees.
+Combine the fruit puree and cream with glucose syrup. Heat to a boil and pour on chocolate. With a submersible blender, we break through to a homogeneous structure. pour into a pastry bag and roll on a cool table. You can store in the refrigerator, before filling the mould heated to 29-30C degrees.
 
 **IMPORTANT:** The most difficult skill here was not to pour the filling, it is necessary that a couple of millimeters do not close to the brim, as in the photo below, if it happened that poured the fillings, remove the excess can be toothpick or syringe.
 
