@@ -1,10 +1,7 @@
-const languages = require('./languages');
-
 module.exports = {
     siteMetadata: {
         title: `Мой блог`,
         description: `Персональный блог о том, что я хочу рассказать`,
-        siteUrl: `https://blog.padniuk.com/`,
-        languages
+        siteUrl: `https://blog.padniuk.com/`
     }
 };

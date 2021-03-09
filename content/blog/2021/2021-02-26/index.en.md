@@ -1,7 +1,7 @@
 ---
 title: "How to made chocolates at home"
 date: 2021-02-26
-published: true
+published: false
 tags: ["Chocolate", "Bonbons"]
 languages:
   en: "./index.en.md"

@@ -89,32 +89,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-i18n',
-      options: {
-        langKeyDefault: 'ru',
-        useLangKeyLayout: false,
-        prefixDefault: true,
-        pagesPaths: [`${__dirname}/content/blog`, `${__dirname}/content/pages`],
-        markdownRemark: {
-          postPage: 'src/templates/blog-post.js',
-          query: `
-          {
-            allMarkdownRemark {
-              edges {
-                node {
-                  fields {
-                    slug,
-                    langKey
-                  }
-                }
-              }
-            }
-          }
-        `
-        }
-      }
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `UA-190310634-2`,
