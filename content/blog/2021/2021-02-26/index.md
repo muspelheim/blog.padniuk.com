@@ -2,7 +2,7 @@
 title: "Как делать шоколадные конфеты"
 date: 2021-02-26
 published: true
-tags: ["Десерт", "Конфеты", "Шоколад"]
+tags: ["Конфеты", "Шоколад"]
 languages:
   en: "./index.en.md"
   ru: "./index.md"
