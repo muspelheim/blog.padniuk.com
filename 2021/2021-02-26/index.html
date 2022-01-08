@@ -1,0 +1,853 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.ccd76c68a46ccc7b2216.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:Roboto;--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:19px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.67;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5}*,:after,:before{box-sizing:border-box}html{line-height:var(--lineHeight-normal);font-size:var(--fontSize-root);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{font-family:var(--font-body);font-size:var(--fontSize-1);color:var(--color-text)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);height:1px;border:0}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);margin-top:var(--spacing-12);margin-bottom:var(--spacing-6);line-height:var(--lineHeight-tight);letter-spacing:-.025em}h2,h3,h4,h5,h6{font-weight:var(--fontWeight-bold);color:var(--color-heading)}h1{font-weight:var(--fontWeight-black);font-size:var(--fontSize-6);color:var(--color-heading-black);text-align:center}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{line-height:var(--lineHeight-relaxed);--baseline-multiplier:0.179;--x-height-multiplier:0.35;margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{margin-left:var(--spacing-8);margin-right:var(--spacing-0);margin-bottom:var(--spacing-8);list-style-position:outside;list-style-image:none}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{color:var(--color-text-light);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);border-left:var(--spacing-1) solid var(--color-primary);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{width:100%;margin-bottom:var(--spacing-8);border-collapse:collapse;border-spacing:.25rem}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{font-size:var(--fontSize-4);color:var(--color-primary);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-weight:var(--fontWeight-bold);font-family:var(--font-heading);text-decoration:none;font-size:var(--fontSize-2)}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{margin-right:var(--spacing-4);min-width:50px;border-radius:100%}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-size:var(--fontSize-2);font-family:var(--font-heading)}.blog-post-date{text-align:center}.blog-post-tags-wrapper{text-align:center;margin:var(--spacing-0) var(--spacing-0) var(--spacing-12) var(--spacing-0)}.blog-post-tags-wrapper p{line-height:var(--lineHeight-relaxed);--baseline-multiplier:0.179;--x-height-multiplier:0.35;margin:var(--spacing-0) var(--spacing-0) var(--spacing-1) var(--spacing-0);padding:var(--spacing-0)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}img{border-style:none;max-width:100%}.table-of-contents{margin-left:1em}@media (max-width:42rem){blockquote{padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);margin-left:var(--spacing-0)}ol,ul{list-style-position:inside}}</style><meta name="generator" content="Gatsby 2.32.8"/><link rel="icon" href="/favicon-32x32.png?v=beb0168558a17dbb947a134587f2ded0" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=beb0168558a17dbb947a134587f2ded0"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=beb0168558a17dbb947a134587f2ded0"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=beb0168558a17dbb947a134587f2ded0"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=beb0168558a17dbb947a134587f2ded0"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=beb0168558a17dbb947a134587f2ded0"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=beb0168558a17dbb947a134587f2ded0"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=beb0168558a17dbb947a134587f2ded0"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=beb0168558a17dbb947a134587f2ded0"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="preconnect" href="https://instagram.com"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/webpack-runtime-3cdd441e5c79879a69cb.js"/><link as="script" rel="preload" href="/framework-741ade27086b2708e961.js"/><link as="script" rel="preload" href="/styles-55e82d6ff5158c00b714.js"/><link as="script" rel="preload" href="/app-eafe9f7f5559a7c09dc5.js"/><link as="script" rel="preload" href="/commons-5d427e649ac9dfd2f12c.js"/><link as="script" rel="preload" href="/d5d7a013bc6c1e2b6d7db819052c16d7efea5559-279b6a4aab882080cc35.js"/><link as="script" rel="preload" href="/cd7d5f864fc9e15ed8adef086269b0aeff617554-3774ed16d12cf9c639fc.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-b61d42b7abe56f139417.js"/><link as="fetch" rel="preload" href="/page-data/2021/2021-02-26/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2781838414.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">Title</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">Как делать шоколадные конфеты</h1><div class="blog-post-tags-wrapper"><p class="blog-post-date"> 📅 <!-- -->26 February, 2021</p><p><span class="blog-post-tags-icon">🏷</span>️<span class="blog-post-tag-item">#<!-- -->Конфеты<!-- --> </span><span class="blog-post-tag-item">#<!-- -->Шоколад<!-- --> </span></p></div></header><section itemProp="articleBody"><p><strong>Всем привет!</strong></p>
+<p>Некоторое время выкладывал результаты своих попыток в освоении работы с шоколадом в телеграм <strong>Вастрик.кухни</strong>, по просьбам участников пишу подробный пост о том, как сделать конфеты руками. Пишу пост впервые, замечания и критика приветствуется.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 94.47852760736197%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAEDBAL/xAAYAQACAwAAAAAAAAAAAAAAAAABAwACBP/aAAwDAQACEAMQAAAB2U3YE6N7pZVkBACf/8QAGxAAAwEAAwEAAAAAAAAAAAAAAAECEQMiMTL/2gAIAQEAAQUCq0ib7K5Zy+Kcc/LSZiZmH//EABYRAQEBAAAAAAAAAAAAAAAAAAECIP/aAAgBAwEBPwGQTH//xAAVEQEBAAAAAAAAAAAAAAAAAAABIP/aAAgBAgEBPwFj/8QAHBAAAgICAwAAAAAAAAAAAAAAADEBERAhQXKR/9oACAEBAAY/AppnafBjonisbEyj/8QAGxABAQACAwEAAAAAAAAAAAAAAREAITFRYUH/2gAIAQEAAT8hiIT8dYNysOfGUJUZh6z3Lcexh7Zx1mg3fQlxAizeSIicvcAAGjP/2gAMAwEAAgADAAAAEJfnQv/EABgRAAMBAQAAAAAAAAAAAAAAAAABERAh/9oACAEDAQE/EBrl4V5//8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAQ/9oACAECAQE/EEjG/wD/xAAcEAEBAAMBAAMAAAAAAAAAAAABEQAhUTFhcZH/2gAIAQEAAT8QoIWtqD3blhtBHANXOuwg6fzNFX2Kt8DD80FKL9Hc1sqViLsyKgSB7i5zxz6byHIIHDP/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="8eb0b9bc14d90fc41d2a61ad046b50b2b8eec749d04bb0a0401f2c3cbdb8f672"
+        title="8eb0b9bc14d90fc41d2a61ad046b50b2b8eec749d04bb0a0401f2c3cbdb8f672"
+        src="/static/f67c0656cc05f13b3bbd88074fb43e58/6aca1/8eb0b9bc14d90fc41d2a61ad046b50b2b8eec749d04bb0a0401f2c3cbdb8f672.jpg"
+        srcset="/static/f67c0656cc05f13b3bbd88074fb43e58/d2f63/8eb0b9bc14d90fc41d2a61ad046b50b2b8eec749d04bb0a0401f2c3cbdb8f672.jpg 163w,
+/static/f67c0656cc05f13b3bbd88074fb43e58/c989d/8eb0b9bc14d90fc41d2a61ad046b50b2b8eec749d04bb0a0401f2c3cbdb8f672.jpg 325w,
+/static/f67c0656cc05f13b3bbd88074fb43e58/6aca1/8eb0b9bc14d90fc41d2a61ad046b50b2b8eec749d04bb0a0401f2c3cbdb8f672.jpg 650w,
+/static/f67c0656cc05f13b3bbd88074fb43e58/3f8a9/8eb0b9bc14d90fc41d2a61ad046b50b2b8eec749d04bb0a0401f2c3cbdb8f672.jpg 855w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p><strong>О себе:</strong> я занимаюсь шоколадом по фану с ноября 2020, за это время удалось проникнуться базовыми вещами и разобраться в некоторых тонкостях работы с этим продуктом. Посмотреть, что из этого получилось <a href="https://www.instagram.com/evgeny.padniuk/">можно по этой ссылке, по возможности подписывайтесь :)</a>.</p>
+<p>Раньше на 1 форму у меня уходило около 4-5 часов, после нескольких тренировок это время сократилось до 1-2 часов на 3 формы.</p>
+<h2 id="содержание" style="position:relative;"><a href="#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5" aria-label="содержание permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Содержание</h2>
+<div class="table-of-contents">
+<ul>
+<li><a href="#%D1%88%D0%B0%D0%B3-0-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE">Шаг 0: Начало</a></li>
+<li><a href="#%D1%88%D0%B0%D0%B3-1-%D1%84%D0%BE%D1%80%D0%BC%D1%8B">Шаг 1: Формы</a></li>
+<li><a href="#%D1%88%D0%B0%D0%B3-2-%D0%BA%D0%B0%D0%BA%D0%B0%D0%BE-%D0%BC%D0%B0%D1%81%D0%BB%D0%BE">Шаг 2: Какао-масло</a></li>
+<li><a href="#%D1%88%D0%B0%D0%B3-4-%D0%B7%D0%B0%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%88%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82%D1%8B">Шаг 4: Заливаем шоколадный корпус конфеты</a></li>
+<li><a href="#%D1%88%D0%B0%D0%B3-5-%D0%BD%D0%B0%D1%87%D0%B8%D0%BD%D0%BA%D0%B0">Шаг 5: Начинка</a></li>
+<li><a href="#%D1%88%D0%B0%D0%B3-6-%D0%B7%D0%B0%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-%D0%B8-%D0%B2%D1%8B%D1%81%D1%82%D1%83%D0%BA%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82%D1%8B">Шаг 6: Закрываем корпус и выстукиваем конфеты</a></li>
+<li><a href="#%D1%88%D0%B0%D0%B3-7-%D0%B2%D1%8B-%D0%BF%D1%80%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D1%8B">Шаг 7: Вы прекрасны</a></li>
+<li><a href="#%D0%B2%D1%81%D0%B5">Все</a></li>
+</ul>
+</div>
+<h3 id="шаг-0-начало" style="position:relative;"><a href="#%D1%88%D0%B0%D0%B3-0-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE" aria-label="шаг 0 начало permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Шаг 0: Начало</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 34.355828220858896%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAEDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAHIgcawKf/EABgQAAIDAAAAAAAAAAAAAAAAAAABAhAS/9oACAEBAAEFAlExX//EABYRAAMAAAAAAAAAAAAAAAAAAAEQEv/aAAgBAwEBPwGyv//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/AYf/xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAYEAACAwAAAAAAAAAAAAAAAAAAARExUf/aAAgBAQABPyGRGh2f/9oADAMBAAIAAwAAABD0L//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPxADZ//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/EJP/xAAaEAACAwEBAAAAAAAAAAAAAAABEQAhUUGR/9oACAEBAAE/EGYu32OQgPo2KwAobP/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="dd23c7833bcb0cb3dcee1fdabbc9d9896db5fb83f3041e3ace645a6995aed754"
+        title="dd23c7833bcb0cb3dcee1fdabbc9d9896db5fb83f3041e3ace645a6995aed754"
+        src="/static/d07210123c328e5be645d1eeaa1f4332/6aca1/dd23c7833bcb0cb3dcee1fdabbc9d9896db5fb83f3041e3ace645a6995aed754.jpg"
+        srcset="/static/d07210123c328e5be645d1eeaa1f4332/d2f63/dd23c7833bcb0cb3dcee1fdabbc9d9896db5fb83f3041e3ace645a6995aed754.jpg 163w,
+/static/d07210123c328e5be645d1eeaa1f4332/c989d/dd23c7833bcb0cb3dcee1fdabbc9d9896db5fb83f3041e3ace645a6995aed754.jpg 325w,
+/static/d07210123c328e5be645d1eeaa1f4332/6aca1/dd23c7833bcb0cb3dcee1fdabbc9d9896db5fb83f3041e3ace645a6995aed754.jpg 650w,
+/static/d07210123c328e5be645d1eeaa1f4332/08d1d/dd23c7833bcb0cb3dcee1fdabbc9d9896db5fb83f3041e3ace645a6995aed754.jpg 957w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>Итак, чтобы сделать шоколданые конфеты понадобится такой инвентарь:</p>
+<ul>
+<li>Поликарбонатные формы (я использую формы от Chocolate World)</li>
+<li>Щуп-термометр или инфракрасный термометр (у меня китайский за 10$)</li>
+<li>Погружной блендер (вбиваем краситель в какао-масло)</li>
+<li>Микроволновка (топим шоколад 10-ти секундными подходами в ней)</li>
+<li>Фен (если температура формы низкая, нужно феном пройтись и подогреть)</li>
+<li>Пластиковые контейнеры для шоколада</li>
+<li>Кондитерские мешки для начинки и шоколада</li>
+<li>Пластиковые контейнеры для окрашенного какао-масла</li>
+<li>Стеклянная или металлическая миска для темперирования</li>
+<li>Ходожественные кисти</li>
+<li>Бумага для выпекания (на нее будем выливать остатки шоколада из формы)</li>
+<li>Шпатель (можно строительный но без ржавчины и хромированный, или кондитерский)</li>
+</ul>
+<p>И такие ингридиенты:</p>
+<ul>
+<li>Какао-масло</li>
+<li>жирорастворимый краситель (пару видов в зависимости от задумки)</li>
+<li>Шоколад (темный/молочный/белый)</li>
+<li>Фруктовое пюре (в зависимости от начинки)</li>
+<li>Орехи (миндаль, фундук, макадамия, пекан, что угодно от предпочтений)</li>
+<li>Сахар</li>
+<li>Глюкозный сироп</li>
+</ul>
+<p>Термометр очень важен, т.к. для того, чтобы шоколад был в "кондиции", его нужно растопить и заново сформировать кристаллическую структуру - этот процесс называется темперированием.</p>
+<p> Графики температур для разных видов шоколада можно посмотреть на картинке ниже, основные производители шоколада указывают эти маркировки на упаковках:</p>
+<p> <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 51.533742331288344%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB1yahFgf/xAAXEAADAQAAAAAAAAAAAAAAAAAAAhMg/9oACAEBAAEFApoTQmmP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAgMBAAAAAAAAAAAAAAAAMpEAAQIg/9oACAEBAAY/AhpQMqBlcf/EABkQAAMAAwAAAAAAAAAAAAAAAAABERAhMf/aAAgBAQABPyGms6nGUXD/2gAMAwEAAgADAAAAEDwv/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8Qqv/EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCIiP/EABwQAAICAwEBAAAAAAAAAAAAAAERADEhQZEQgf/aAAgBAQABPxDIAavDkFX3SDfxwyCUdxlZvy//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Тут в фаренгейтах :("
+        title="Тут в фаренгейтах :("
+        src="/static/213e1de4aee054909fc1dfabdf5f033a/6aca1/4967a850832ac36561e47db8e6f4a3c226dcf719a225f9223d6859a514773438.jpg"
+        srcset="/static/213e1de4aee054909fc1dfabdf5f033a/d2f63/4967a850832ac36561e47db8e6f4a3c226dcf719a225f9223d6859a514773438.jpg 163w,
+/static/213e1de4aee054909fc1dfabdf5f033a/c989d/4967a850832ac36561e47db8e6f4a3c226dcf719a225f9223d6859a514773438.jpg 325w,
+/static/213e1de4aee054909fc1dfabdf5f033a/6aca1/4967a850832ac36561e47db8e6f4a3c226dcf719a225f9223d6859a514773438.jpg 650w,
+/static/213e1de4aee054909fc1dfabdf5f033a/7c09c/4967a850832ac36561e47db8e6f4a3c226dcf719a225f9223d6859a514773438.jpg 975w,
+/static/213e1de4aee054909fc1dfabdf5f033a/01ab0/4967a850832ac36561e47db8e6f4a3c226dcf719a225f9223d6859a514773438.jpg 1300w,
+/static/213e1de4aee054909fc1dfabdf5f033a/7e1b6/4967a850832ac36561e47db8e6f4a3c226dcf719a225f9223d6859a514773438.jpg 1310w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p> Грубо говоря, вам нужно растопить в микроволновке шоколад до температуры 45 градусов, быстро охладить в металлической/стеклянной посуде до 27 градусов, и разогреть до температуры 29-31 градусов (в зависимости от вида шоколада) для работы (т.к. на 27 градусах шоколадная масса уже довольно густая и корпус конфеты будет толстый).</p>
+<p> Температура в помещении должна быть <strong>18-20 градусов</strong> для работы с шоколадом, при других температурах шоколад будет хуже кристаллизоваться и результат будет хуже.</p>
+<p> Работать нужно в перчатках, чтобы не оставить отпечатков на форме и не вымазать руки в масло.</p>
+<h3 id="шаг-1-формы" style="position:relative;"><a href="#%D1%88%D0%B0%D0%B3-1-%D1%84%D0%BE%D1%80%D0%BC%D1%8B" aria-label="шаг 1 формы permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Шаг 1: Формы</h3>
+<p>  <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.668711656441715%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDAgT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABriSl6Bh//8QAGBABAQEBAQAAAAAAAAAAAAAAAAERAhL/2gAIAQEAAQUCrWrXMeX/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAXEAADAQAAAAAAAAAAAAAAAAAAEDEB/9oACAEBAAY/AlXdP//EABkQAQEBAAMAAAAAAAAAAAAAAAEAERAhMf/aAAgBAQABPyFcDETu0fWDkf/aAAwDAQACAAMAAAAQAB//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCH/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oACAECAQE/EKx//8QAHRABAAEEAwEAAAAAAAAAAAAAAQARITFBcYGx0f/aAAgBAQABPxAFxAri27wBQo4YxC7mS6JRPY+T/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="формы типо таких"
+        title="формы типо таких"
+        src="/static/c0d8ff679bbb58645c543f2f1eee950b/6aca1/cd1c72554fc0a316762c71d7c997bbf31d7930f78e035e2eb7fe0f2e61d011f2.jpg"
+        srcset="/static/c0d8ff679bbb58645c543f2f1eee950b/d2f63/cd1c72554fc0a316762c71d7c997bbf31d7930f78e035e2eb7fe0f2e61d011f2.jpg 163w,
+/static/c0d8ff679bbb58645c543f2f1eee950b/c989d/cd1c72554fc0a316762c71d7c997bbf31d7930f78e035e2eb7fe0f2e61d011f2.jpg 325w,
+/static/c0d8ff679bbb58645c543f2f1eee950b/6aca1/cd1c72554fc0a316762c71d7c997bbf31d7930f78e035e2eb7fe0f2e61d011f2.jpg 650w,
+/static/c0d8ff679bbb58645c543f2f1eee950b/7c09c/cd1c72554fc0a316762c71d7c997bbf31d7930f78e035e2eb7fe0f2e61d011f2.jpg 975w,
+/static/c0d8ff679bbb58645c543f2f1eee950b/3e41e/cd1c72554fc0a316762c71d7c997bbf31d7930f78e035e2eb7fe0f2e61d011f2.jpg 1184w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p> Я использую формы от Chocolate World, есть еще известные производители Pavoni, Martellato, Inplast, стоят они примерно одинаково, можно и с китайскими, но с ними могут быть проблемы - тут как повезет.</p>
+<p> Для работы с шоколадом, формы нужно вымыть, насухо вытереть бумажными салфетками, и, чтобы убедиться в отсутствии остатков жира/какао-масла протереть салфетками смоченными спиртом/водкой (не обязательно если качественно промыта).</p>
+<p> Когда это сделано, форма готова к окрашиванию.</p>
+<h3 id="шаг-2-какао-масло" style="position:relative;"><a href="#%D1%88%D0%B0%D0%B3-2-%D0%BA%D0%B0%D0%BA%D0%B0%D0%BE-%D0%BC%D0%B0%D1%81%D0%BB%D0%BE" aria-label="шаг 2 какао масло permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Шаг 2: Какао-масло</h3>
+<p>  <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.515337423312886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAIDBf/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgT/2gAMAwEAAhADEAAAAdOszXEM/8QAGBABAAMBAAAAAAAAAAAAAAAAAQACEhH/2gAIAQEAAQUCtoLZ6jP/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAARARIf/aAAgBAQAGPwLBKo//xAAYEAEAAwEAAAAAAAAAAAAAAAABABEhQf/aAAgBAQABPyHCIE7OwVXmT//aAAwDAQACAAMAAAAQj9//xAAWEQEBAQAAAAAAAAAAAAAAAAABACH/2gAIAQMBAT8QHIv/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAh/9oACAECAQE/EEjM8Zv/xAAaEAEAAgMBAAAAAAAAAAAAAAABABEhQWEx/9oACAEBAAE/EODUmuRUJTC+ajIKqYsan//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="458b484b62927477c18d5617922658075fcd16f55c7f77eb6f31bc7dd92e55b1"
+        title="458b484b62927477c18d5617922658075fcd16f55c7f77eb6f31bc7dd92e55b1"
+        src="/static/8be8b524dd26f7d3fe0c77d021f6bad0/6aca1/458b484b62927477c18d5617922658075fcd16f55c7f77eb6f31bc7dd92e55b1.jpg"
+        srcset="/static/8be8b524dd26f7d3fe0c77d021f6bad0/d2f63/458b484b62927477c18d5617922658075fcd16f55c7f77eb6f31bc7dd92e55b1.jpg 163w,
+/static/8be8b524dd26f7d3fe0c77d021f6bad0/c989d/458b484b62927477c18d5617922658075fcd16f55c7f77eb6f31bc7dd92e55b1.jpg 325w,
+/static/8be8b524dd26f7d3fe0c77d021f6bad0/6aca1/458b484b62927477c18d5617922658075fcd16f55c7f77eb6f31bc7dd92e55b1.jpg 650w,
+/static/8be8b524dd26f7d3fe0c77d021f6bad0/7c09c/458b484b62927477c18d5617922658075fcd16f55c7f77eb6f31bc7dd92e55b1.jpg 975w,
+/static/8be8b524dd26f7d3fe0c77d021f6bad0/16baf/458b484b62927477c18d5617922658075fcd16f55c7f77eb6f31bc7dd92e55b1.jpg 1239w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>  Какао-масло для работы подойдет по сути любое.</p>
+<p>  Какао-масло бесцветно, полупрозрачное. Для работы его нужно окрасить в желаемые цвета. Для окрашивания нужно на 100 грамм масла, 5 грамм жирорастворимого красителя.</p>
+<p>  Так как в составе шоколада содержится процент какао-масла, то и принцип работы с ним похожий. Для начала в микроволновой печи нужно растопить какао-масло до температура 50-55 градусов по цельсию. Всыпаем необходимое количество красителя в масло и пробиваем блендером. <strong>Рекомендую всыпать и пробивать по-немногу, контролируя цвет</strong>. После пробития, масло необходимо процедить через вискозную салфетку, чтобы не попадалось частиц красителя при окраске формы. Далее вновь нагреваем до 50-55 градусов окрашенный краситель и быстро охлаждаем до 26-27 градусов в стеклянной посуде, подогреваете феном до 29-30 градусов и можете использовать либо перелить в пластиковую тару на хранение.</p>
+<p>  <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 74.84662576687117%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABYivFNbhOF//EABkQAAIDAQAAAAAAAAAAAAAAAAECAAMREv/aAAgBAQABBQI7yjtYJWwUtZrg4P/EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/ASf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAdEAEAAQMFAAAAAAAAAAAAAAABAAIRMRASIUFR/9oACAEBAAY/ArnU5LUmdF9lbtzAn//EABsQAQADAAMBAAAAAAAAAAAAAAEAESExQVFh/9oACAEBAAE/IVemtw7mOuQuAJk2syQtFewvmT//2gAMAwEAAgADAAAAEJAf/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERITH/2gAIAQMBAT8Q7jY5cP/EABYRAQEBAAAAAAAAAAAAAAAAAAABQf/aAAgBAgEBPxDEr//EABsQAQACAwEBAAAAAAAAAAAAAAEAESExUUFh/9oACAEBAAE/EMZlgFpPIcUqlNr5uAlgfWNu6ivK5M+AfjPJWzQ3uf/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Я намешиваю много основного цвета, и из него потом делаю сопутствующие"
+        title="Я намешиваю много основного цвета, и из него потом делаю сопутствующие"
+        src="/static/f0d65719784c54ebb89e6ed213830690/6aca1/973a0adfc091eb6b30dcd91e7dede4f67089d9a5ce99b58f55c95df5a97ad75b.jpg"
+        srcset="/static/f0d65719784c54ebb89e6ed213830690/d2f63/973a0adfc091eb6b30dcd91e7dede4f67089d9a5ce99b58f55c95df5a97ad75b.jpg 163w,
+/static/f0d65719784c54ebb89e6ed213830690/c989d/973a0adfc091eb6b30dcd91e7dede4f67089d9a5ce99b58f55c95df5a97ad75b.jpg 325w,
+/static/f0d65719784c54ebb89e6ed213830690/6aca1/973a0adfc091eb6b30dcd91e7dede4f67089d9a5ce99b58f55c95df5a97ad75b.jpg 650w,
+/static/f0d65719784c54ebb89e6ed213830690/9aaa0/973a0adfc091eb6b30dcd91e7dede4f67089d9a5ce99b58f55c95df5a97ad75b.jpg 671w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>  Цвета можно подобрать на этом сайте: <a href="https://trycolors.com/">https://trycolors.com/</a>
+Принцип такой, что добавляем части базового, и видим какой будет результирующий, но для начала можно и с базовыми.</p>
+<p>  <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 71.77914110429448%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUBBP/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAevYac7yAZ//xAAaEAACAgMAAAAAAAAAAAAAAAAAAwETEBEh/9oACAEBAAEFAqkFSCtBvszj/8QAFREBAQAAAAAAAAAAAAAAAAAAAIH/2gAIAQMBAT8BiP/EABYRAQEBAAAAAAAAAAAAAAAAAAAhIv/aAAgBAgEBPwGtP//EABgQAAMBAQAAAAAAAAAAAAAAAABBkSCS/9oACAEBAAY/AlRUXWP/xAAdEAACAQQDAAAAAAAAAAAAAAAAATERIVHwYXHh/9oACAEBAAE/IQ9Xs5NOxJJWMEFWf//aAAwDAQACAAMAAAAQvC//xAAXEQEAAwAAAAAAAAAAAAAAAAAAESFh/9oACAEDAQE/ELIw/8QAFhEBAQEAAAAAAAAAAAAAAAAAADER/9oACAECAQE/EKjT/8QAHRAAAQQCAwAAAAAAAAAAAAAAAQARITFhcUGR8P/aAAgBAQABPxAl4L3KF91PWfYIQEDg7SQER2ZI2JwtXS//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="выбираем на цветовом круге необходимый, жмем get formula, сайт дает состав выбранного цвета из базовых."
+        title="выбираем на цветовом круге необходимый, жмем get formula, сайт дает состав выбранного цвета из базовых."
+        src="/static/dfcf109096b2b28c6c14403972f3a998/6aca1/51f229d9fd4fffc6836bc671a2ed69f6d892f568ff5512df02b797f8cf990c8c.jpg"
+        srcset="/static/dfcf109096b2b28c6c14403972f3a998/d2f63/51f229d9fd4fffc6836bc671a2ed69f6d892f568ff5512df02b797f8cf990c8c.jpg 163w,
+/static/dfcf109096b2b28c6c14403972f3a998/c989d/51f229d9fd4fffc6836bc671a2ed69f6d892f568ff5512df02b797f8cf990c8c.jpg 325w,
+/static/dfcf109096b2b28c6c14403972f3a998/6aca1/51f229d9fd4fffc6836bc671a2ed69f6d892f568ff5512df02b797f8cf990c8c.jpg 650w,
+/static/dfcf109096b2b28c6c14403972f3a998/7c09c/51f229d9fd4fffc6836bc671a2ed69f6d892f568ff5512df02b797f8cf990c8c.jpg 975w,
+/static/dfcf109096b2b28c6c14403972f3a998/603e2/51f229d9fd4fffc6836bc671a2ed69f6d892f568ff5512df02b797f8cf990c8c.jpg 1022w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>  Если влом запариваться и зп 300к/с, то можно купить готовое масло от ChefRubber по 20 баксов за 200 грамм.</p>
+<p>  После остывания, масло кристаллизуется, переиспользовать его можно сколько угодно раз, просто разогревая в микроволновой печи и темперируя как описано выше.</p>
+<p>  Если хотите скипнуть темперирование, то можно греть масло по 10 секунд, и смотреть пока не растопится центр, когда центр растопится, достаньте масло и помешайте ложечкой, проверить все ли хорошо, можно просто капнув каплю масла на холодное керамическое блюдце, через минуту масло должно стать матовым. Если матовым не становится, то отвертеться не удастся, и придется провернуть шаги по подогреву/оставанию как описано выше.</p>
+<h4 id="шаг-3-окраска-формы-маслом" style="position:relative;"><a href="#%D1%88%D0%B0%D0%B3-3-%D0%BE%D0%BA%D1%80%D0%B0%D1%81%D0%BA%D0%B0-%D1%84%D0%BE%D1%80%D0%BC%D1%8B-%D0%BC%D0%B0%D1%81%D0%BB%D0%BE%D0%BC" aria-label="шаг 3 окраска формы маслом permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Шаг 3: Окраска формы маслом</h4>
+<p>  <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50.920245398773%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABUfyomopTC//EABwQAAICAgMAAAAAAAAAAAAAAAECAAMEERIhMv/aAAgBAQABBQKrHJj1cFY9r7hUb//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAICAwEAAAAAAAAAAAAAAAABITEDEBGh/9oACAEBAAY/Ak8kL0XKJFqkf//EAB0QAQACAQUBAAAAAAAAAAAAAAEAQTERIVFhodH/2gAIAQEAAT8hyq6tE1BMa9lBv2jEorFeZ8Kn/9oADAMBAAIAAwAAABDX/wD/xAAWEQEBAQAAAAAAAAAAAAAAAAABEBH/2gAIAQMBAT8QTJ//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxAn/8QAHRABAQADAAIDAAAAAAAAAAAAAREAIUExYYGhsf/aAAgBAQABPxCkk1K+jnzj8Yomm9jXV7kRvjxG9DPGMIRSi5YlR5cevwZ//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="2dfdfd543478561657018ee4dcf09f314de11c78d6552325ded0d12c9557f613"
+        title="2dfdfd543478561657018ee4dcf09f314de11c78d6552325ded0d12c9557f613"
+        src="/static/a22997217b401b26dbe11550c9f9299f/6aca1/2dfdfd543478561657018ee4dcf09f314de11c78d6552325ded0d12c9557f613.jpg"
+        srcset="/static/a22997217b401b26dbe11550c9f9299f/d2f63/2dfdfd543478561657018ee4dcf09f314de11c78d6552325ded0d12c9557f613.jpg 163w,
+/static/a22997217b401b26dbe11550c9f9299f/c989d/2dfdfd543478561657018ee4dcf09f314de11c78d6552325ded0d12c9557f613.jpg 325w,
+/static/a22997217b401b26dbe11550c9f9299f/6aca1/2dfdfd543478561657018ee4dcf09f314de11c78d6552325ded0d12c9557f613.jpg 650w,
+/static/a22997217b401b26dbe11550c9f9299f/93c35/2dfdfd543478561657018ee4dcf09f314de11c78d6552325ded0d12c9557f613.jpg 913w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p> Тут делаем, что хочется, раскрываем творческие чакры и мажем как карта ляжет.</p>
+<p> <strong>(!!!)</strong> После каждого цвета масло на форме должно застыть, чтобы не было смешивания с уже нанесенными цветами, для этого после нанесения определенного цвета нужно некоторое время подождать. Проверить можно кистью или пальцем, если масло не мажет и стало матовым, можно нанести другой цвет.</p>
+<p> После того как все цвета нанесены, то, что попало вне ячеек, на внешнюю сторону формы нужно счистить, чтобы куски окрашенного масла не попали в шоколад, можно спатулой, можно бумажной салфеткой.</p>
+<p> <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 622px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 126.38036809815951%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAZABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAUAAv/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABLSnJGicrITa5lS8aNqf/xAAeEAACAgEFAQAAAAAAAAAAAAABAgADEQQQEhMyM//aAAgBAQABBQJRF4tDUIpCrVnsxKa3K42p8zV/b//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPwHIs//EABURAQEAAAAAAAAAAAAAAAAAABEg/9oACAECAQE/AWP/xAAeEAABAwQDAAAAAAAAAAAAAAABABAREiExUQJxgf/aAAgBAQAGPwIkRZYusKKZO0KTO2AtTl+PTeL/xAAeEAACAwACAwEAAAAAAAAAAAAAAREhMUGxEFFh8f/aAAgBAQABPyGNJovfWKmkhpJD/R5CkzTZKZcH2oZpNduRrvVDhfvgXh1D/9oADAMBAAIAAwAAABA8B7P/xAAXEQEBAQEAAAAAAAAAAAAAAAABEBFB/9oACAEDAQE/EEppyIs//8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAECAQE/EDDkAJ//xAAfEAACAgEEAwAAAAAAAAAAAAABEQAhMUFRYbGBofD/2gAIAQEAAT8QIUqsE+VxeMpFJQlyEGYGENsOYFDCkwJYMY2ImQ3DCUO1kG0vE1azlB0hHRIGtx6LoTomP6zP/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Излишки масла, которые нужно очистить"
+        title="Излишки масла, которые нужно очистить"
+        src="/static/1eb2e7bd4f617129dcdb46d6851864d7/5e4ef/8dccf8fd0c6870fceef3a23ba1bd0057240a38a74f47ff8c67299e57a710c57f.jpg"
+        srcset="/static/1eb2e7bd4f617129dcdb46d6851864d7/d2f63/8dccf8fd0c6870fceef3a23ba1bd0057240a38a74f47ff8c67299e57a710c57f.jpg 163w,
+/static/1eb2e7bd4f617129dcdb46d6851864d7/c989d/8dccf8fd0c6870fceef3a23ba1bd0057240a38a74f47ff8c67299e57a710c57f.jpg 325w,
+/static/1eb2e7bd4f617129dcdb46d6851864d7/5e4ef/8dccf8fd0c6870fceef3a23ba1bd0057240a38a74f47ff8c67299e57a710c57f.jpg 622w"
+        sizes="(max-width: 622px) 100vw, 622px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p> <strong>Пара полезных фокусов:</strong></p>
+<ul>
+<li>Можно купить зубную щетку, макнуть в масло и сделать брызги пальцами на форму, получатся точки.</li>
+<li>Темные цвета блестят заметно лучше чем светлые, если хотите блеск-блеск, то лучше использовать темные контрастные цвета.</li>
+<li>Чистую губку для посуды, можно обрезать и рисовать ей</li>
+<li>Для того чтобы цвета были ярче, на задний фон нужно нанести белый цвет, т.к. масло полупрозрачное, будет приятный контраст
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 294px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 111.65644171779141%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAWABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAQBAgMF/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAB8W6evPW5ojF4dhZ//8QAHBAAAgICAwAAAAAAAAAAAAAAAQIDEgAhESIx/9oACAEBAAEFAvcjkrg4YINdaRIwWi1WFFAGv//EABURAQEAAAAAAAAAAAAAAAAAAAIg/9oACAEDAQE/ASY//8QAFREBAQAAAAAAAAAAAAAAAAAAASD/2gAIAQIBAT8BWP/EABwQAAEEAwEAAAAAAAAAAAAAAAABEBEhAjEycf/aAAgBAQAGPwI5olG1Z6JjBSN//8QAGhAAAwEBAQEAAAAAAAAAAAAAAAERITFRQf/aAAgBAQABPyFNjGoEbkzG39Yk0pp6zUqVYOS8aUWvr0RB/9oADAMBAAIAAwAAABCQF4D/xAAYEQEAAwEAAAAAAAAAAAAAAAABABARIf/aAAgBAwEBPxDc2YRUOV//xAAWEQEBAQAAAAAAAAAAAAAAAAAQATH/2gAIAQIBAT8QPaf/xAAeEAEBAQABBAMAAAAAAAAAAAABEQBRITFBYXGhsf/aAAgBAQABPxCuBDzk7ScPXQiPBzp3waTDgktOifGv2SGpDx+ZMAkGDCWdxX3hB63/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="без белого на заднем фоне"
+        title="без белого на заднем фоне"
+        src="/static/4e4cf9c2cc4564a631daaa393c6df5cb/a306a/8fd81648d5f9cece535067bbc5b071267baacabf085eae7dff70289f61bb9f70.jpg"
+        srcset="/static/4e4cf9c2cc4564a631daaa393c6df5cb/d2f63/8fd81648d5f9cece535067bbc5b071267baacabf085eae7dff70289f61bb9f70.jpg 163w,
+/static/4e4cf9c2cc4564a631daaa393c6df5cb/a306a/8fd81648d5f9cece535067bbc5b071267baacabf085eae7dff70289f61bb9f70.jpg 294w"
+        sizes="(max-width: 294px) 100vw, 294px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 90.79754601226993%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAASABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMCBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAABzRwzXtMrikAoD//EABsQAAICAwEAAAAAAAAAAAAAAAECAAMRMTIz/9oACAEBAAEFArWKOt4m5fUWByInEu8l5//EABYRAAMAAAAAAAAAAAAAAAAAAAIgMf/aAAgBAwEBPwEon//EABYRAQEBAAAAAAAAAAAAAAAAAAEQMf/aAAgBAgEBPwE2E//EAB0QAAICAQUAAAAAAAAAAAAAAAABAiEQIjFRYXH/2gAIAQEABj8CcouzVWG1b4HHboj5hiP/xAAbEAEAAwEAAwAAAAAAAAAAAAABABEhQRBRcf/aAAgBAQABPyHOQKpjqDaubcEAjjLA2qKLaO5rQ+PAG0mKfU//2gAMAwEAAgADAAAAEOwXPP/EABgRAQEBAQEAAAAAAAAAAAAAAAEAMRFB/9oACAEDAQE/EEPR4RORl//EABgRAQEBAQEAAAAAAAAAAAAAAAEAMSFB/9oACAECAQE/EC8PrO2idv/EAB8QAQABBAIDAQAAAAAAAAAAAAERACFBUTFhEHGB0f/aAAgBAQABPxCJQCDyOjPXdTjwr8x0GH9oiyEjsrLKCxAad5KMikCCb24b/O5pKlFExt88QAME3O6AIARseq//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Такой же дизайн, но с белым на заднем фоне"
+        title="Такой же дизайн, но с белым на заднем фоне"
+        src="/static/04445047abe75b59cf4167f896e1a529/6aca1/0690fd8cebba32c03e1668b419e78a336ffaa972b1ff785cba3b93fc7ff41360.jpg"
+        srcset="/static/04445047abe75b59cf4167f896e1a529/d2f63/0690fd8cebba32c03e1668b419e78a336ffaa972b1ff785cba3b93fc7ff41360.jpg 163w,
+/static/04445047abe75b59cf4167f896e1a529/c989d/0690fd8cebba32c03e1668b419e78a336ffaa972b1ff785cba3b93fc7ff41360.jpg 325w,
+/static/04445047abe75b59cf4167f896e1a529/6aca1/0690fd8cebba32c03e1668b419e78a336ffaa972b1ff785cba3b93fc7ff41360.jpg 650w,
+/static/04445047abe75b59cf4167f896e1a529/07635/0690fd8cebba32c03e1668b419e78a336ffaa972b1ff785cba3b93fc7ff41360.jpg 952w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></li>
+<li>можно не стесняться рисовать пальцами, как тут:
+<div class="gatsby-resp-iframe-wrapper" style="padding-bottom: 56.42857142857143%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem" > <div class="embedVideo-container"> <iframe title="" src="https://www.youtube.com/embed/Sen-kIQ3dig?rel=0" class="embedVideo-iframe" style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; " loading="lazy" allowfullscreen=""></iframe> </div> </div></li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 65.6441717791411%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABzZY4u05gn//EABoQAQACAwEAAAAAAAAAAAAAAAECEQAQMTL/2gAIAQEAAQUCOjeCOn3OVS//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFH/8QAGBABAQEBAQAAAAAAAAAAAAAAAREAYRD/2gAIAQEABj8CmKAddTyaIPXf/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFBUXH/2gAIAQEAAT8hWAFXgRbEQ+kDsEj7DQ3HNuz5LBKY6T//2gAMAwEAAgADAAAAEJ8f/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAEDAQE/ELiv/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8QCf/EABsQAQACAwEBAAAAAAAAAAAAAAEAESExQWFx/9oACAEBAAE/EKbD1WNQZAywyOUQukd1AjRRrkG7QIyL65A0wIVfZ//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Губка"
+        title="Губка"
+        src="/static/a9aa366deba8238a75e96d3942a39dda/6aca1/6f33cfc35c7587d9374695f738ad476548fad0301baf8b181e738ff50ecced93.jpg"
+        srcset="/static/a9aa366deba8238a75e96d3942a39dda/d2f63/6f33cfc35c7587d9374695f738ad476548fad0301baf8b181e738ff50ecced93.jpg 163w,
+/static/a9aa366deba8238a75e96d3942a39dda/c989d/6f33cfc35c7587d9374695f738ad476548fad0301baf8b181e738ff50ecced93.jpg 325w,
+/static/a9aa366deba8238a75e96d3942a39dda/6aca1/6f33cfc35c7587d9374695f738ad476548fad0301baf8b181e738ff50ecced93.jpg 650w,
+/static/a9aa366deba8238a75e96d3942a39dda/7c09c/6f33cfc35c7587d9374695f738ad476548fad0301baf8b181e738ff50ecced93.jpg 975w,
+/static/a9aa366deba8238a75e96d3942a39dda/7bc57/6f33cfc35c7587d9374695f738ad476548fad0301baf8b181e738ff50ecced93.jpg 1104w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80.98159509202453%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABWpes3WTkX//EABsQAAIDAAMAAAAAAAAAAAAAAAECAAMSERMi/9oACAEBAAEFAi6rHY5UnNk4PVU/j//EABYRAAMAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPwE1f//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAICAwEAAAAAAAAAAAAAAAABAhEhMjOB/9oACAEBAAY/AssuE6FmzWzXw5tH/8QAGRABAAMBAQAAAAAAAAAAAAAAAQARITFB/9oACAEBAAE/Ia0qWIxA1cUgMdIVMiYdZ1EKFB8n/9oADAMBAAIAAwAAABAMD//EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAIAQMBAT8QWuQ3/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAx/9oACAECAQE/EANkv//EAB4QAAICAgIDAAAAAAAAAAAAAAERADEhQVFhcZHB/9oACAEBAAE/EER+Z8i9H4qPEakAdJO1BkgW2GR6zFhMLbr5gkIECdHvM//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Пальцы"
+        title="Пальцы"
+        src="/static/628b847eb58818784040147e5d0465f6/6aca1/3aef681b251c8a389955a59940b81719435ba12b6630e83666bf0570ac46d7bb.jpg"
+        srcset="/static/628b847eb58818784040147e5d0465f6/d2f63/3aef681b251c8a389955a59940b81719435ba12b6630e83666bf0570ac46d7bb.jpg 163w,
+/static/628b847eb58818784040147e5d0465f6/c989d/3aef681b251c8a389955a59940b81719435ba12b6630e83666bf0570ac46d7bb.jpg 325w,
+/static/628b847eb58818784040147e5d0465f6/6aca1/3aef681b251c8a389955a59940b81719435ba12b6630e83666bf0570ac46d7bb.jpg 650w,
+/static/628b847eb58818784040147e5d0465f6/a6d30/3aef681b251c8a389955a59940b81719435ba12b6630e83666bf0570ac46d7bb.jpg 674w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.09815950920245%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAf/EABUBAQEAAAAAAAAAAAAAAAAAAAAD/9oADAMBAAIQAxAAAAGFqaZVUaH/xAAbEAACAgMBAAAAAAAAAAAAAAABAgAREhMhIv/aAAgBAQABBQKzb9CuQHEw86RP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGxAAAQUBAQAAAAAAAAAAAAAAAAECESExEoH/2gAIAQEABj8C15U+EcuLcpqmqf/EABsQAQACAgMAAAAAAAAAAAAAAAEAESFxMUFR/9oACAEBAAE/IUi4LiqbDqLmTc2DyVQYNxd4p//aAAwDAQACAAMAAAAQNw//xAAWEQEBAQAAAAAAAAAAAAAAAAAAASH/2gAIAQMBAT8Qka//xAAWEQEBAQAAAAAAAAAAAAAAAAABACH/2gAIAQIBAT8QUsv/xAAeEAEAAgIBBQAAAAAAAAAAAAABABEhMdFRYXGBkf/aAAgBAQABPxBcPsoM+ojNbgqvzLEsdoeIhW2+OlWELKEYbCcR0nZE/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Кисточка + маскировочная лента обрезанная под угром"
+        title="Кисточка + маскировочная лента обрезанная под угром"
+        src="/static/2bb036b2431f33e6dbc5673ca51cf373/6aca1/cef19da8bdafa0d175642e9d38ed1125a840a8d14f849c70dc182888cc1443cf.jpg"
+        srcset="/static/2bb036b2431f33e6dbc5673ca51cf373/d2f63/cef19da8bdafa0d175642e9d38ed1125a840a8d14f849c70dc182888cc1443cf.jpg 163w,
+/static/2bb036b2431f33e6dbc5673ca51cf373/c989d/cef19da8bdafa0d175642e9d38ed1125a840a8d14f849c70dc182888cc1443cf.jpg 325w,
+/static/2bb036b2431f33e6dbc5673ca51cf373/6aca1/cef19da8bdafa0d175642e9d38ed1125a840a8d14f849c70dc182888cc1443cf.jpg 650w,
+/static/2bb036b2431f33e6dbc5673ca51cf373/ec2c1/cef19da8bdafa0d175642e9d38ed1125a840a8d14f849c70dc182888cc1443cf.jpg 865w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>Я за пару месяцев приобрел уже кучу кистей, которыми иногда пользуюсь.
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 95.0920245398773%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMFAgT/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAeqssdp5lVkNEGv/xAAZEAACAwEAAAAAAAAAAAAAAAABAgADEjH/2gAIAQEAAQUCLZgsUzsxpc4tSxQgjytFI//EABURAQEAAAAAAAAAAAAAAAAAABAB/9oACAEDAQE/ASH/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAcEAACAgIDAAAAAAAAAAAAAAAAARESAmEQITH/2gAIAQEABj8CXkGySrK5CTfD0do//8QAHBABAAMBAAMBAAAAAAAAAAAAAQARIVExQWGh/9oACAEBAAE/IaSfp2IY+C12FA6iO7+SxW5oyuEmR7N79LPkRtjc/9oADAMBAAIAAwAAABDQED7/xAAYEQEBAQEBAAAAAAAAAAAAAAABACERMf/aAAgBAwEBPxAdtvUBy//EABcRAQEBAQAAAAAAAAAAAAAAAAARASH/2gAIAQIBAT8QnExqv//EAB0QAQACAgIDAAAAAAAAAAAAAAEAESFRMXFBYYH/2gAIAQEAAT8QuuBihXb3KIiCLTT1mM4WCx3FYNEbOVslNiKk86SEZHbNxqFsa3kmr5KDAT2S/hP/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="6657ca46c40ec56be8683bce43fe5772cd95d8d398f22c8e9ce203c4867d6085"
+        title="6657ca46c40ec56be8683bce43fe5772cd95d8d398f22c8e9ce203c4867d6085"
+        src="/static/5db587430d94257a2233c47c54772d64/6aca1/6657ca46c40ec56be8683bce43fe5772cd95d8d398f22c8e9ce203c4867d6085.jpg"
+        srcset="/static/5db587430d94257a2233c47c54772d64/d2f63/6657ca46c40ec56be8683bce43fe5772cd95d8d398f22c8e9ce203c4867d6085.jpg 163w,
+/static/5db587430d94257a2233c47c54772d64/c989d/6657ca46c40ec56be8683bce43fe5772cd95d8d398f22c8e9ce203c4867d6085.jpg 325w,
+/static/5db587430d94257a2233c47c54772d64/6aca1/6657ca46c40ec56be8683bce43fe5772cd95d8d398f22c8e9ce203c4867d6085.jpg 650w,
+/static/5db587430d94257a2233c47c54772d64/41d8b/6657ca46c40ec56be8683bce43fe5772cd95d8d398f22c8e9ce203c4867d6085.jpg 735w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h3 id="шаг-4-заливаем-шоколадный-корпус-конфеты" style="position:relative;"><a href="#%D1%88%D0%B0%D0%B3-4-%D0%B7%D0%B0%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%88%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82%D1%8B" aria-label="шаг 4 заливаем шоколадный корпус конфеты permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Шаг 4: Заливаем шоколадный корпус конфеты</h3>
+<p>Когда форма окрашена, нужно залить корпус шоколадом.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 69.93865030674846%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAACBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAE+EFl68eT/xAAbEAACAwADAAAAAAAAAAAAAAABAgADEgQRIv/aAAgBAQABBQK8nVVuWwDOQvkIZV2E/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGhAAAgIDAAAAAAAAAAAAAAAAABEBIRAxgf/aAAgBAQAGPwKtF9HGUz//xAAZEAEAAwEBAAAAAAAAAAAAAAABABEhMWH/2gAIAQEAAT8hqdjORDdDkdhjKx4y1qUzrLP/2gAMAwEAAgADAAAAEE//AP/EABYRAAMAAAAAAAAAAAAAAAAAAAEQMf/aAAgBAwEBPxARf//EABcRAQADAAAAAAAAAAAAAAAAAAABEUH/2gAIAQIBAT8Q1UP/xAAbEAEAAwEAAwAAAAAAAAAAAAABABEhMUFxkf/aAAgBAQABPxAAOneR7hdcbXxlGg6GQ+LIKlUiC3ViBSC1lZP/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="76bdbcaf1d073a01b47530a6c1de8351c142c6d3ab95a9fa317d53cdcd8610f8"
+        title="76bdbcaf1d073a01b47530a6c1de8351c142c6d3ab95a9fa317d53cdcd8610f8"
+        src="/static/3567b2f3db52398e113c5ac3747a55d4/6aca1/76bdbcaf1d073a01b47530a6c1de8351c142c6d3ab95a9fa317d53cdcd8610f8.jpg"
+        srcset="/static/3567b2f3db52398e113c5ac3747a55d4/d2f63/76bdbcaf1d073a01b47530a6c1de8351c142c6d3ab95a9fa317d53cdcd8610f8.jpg 163w,
+/static/3567b2f3db52398e113c5ac3747a55d4/c989d/76bdbcaf1d073a01b47530a6c1de8351c142c6d3ab95a9fa317d53cdcd8610f8.jpg 325w,
+/static/3567b2f3db52398e113c5ac3747a55d4/6aca1/76bdbcaf1d073a01b47530a6c1de8351c142c6d3ab95a9fa317d53cdcd8610f8.jpg 650w,
+/static/3567b2f3db52398e113c5ac3747a55d4/7c09c/76bdbcaf1d073a01b47530a6c1de8351c142c6d3ab95a9fa317d53cdcd8610f8.jpg 975w,
+/static/3567b2f3db52398e113c5ac3747a55d4/4068b/76bdbcaf1d073a01b47530a6c1de8351c142c6d3ab95a9fa317d53cdcd8610f8.jpg 1109w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>Производители шоколада указывают текучесть на упаковке, как правило для корпусов необходима текучесть 4 из 5, но взять можно в прицнипе любой.
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 98.15950920245399%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIEBQP/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/aAAwDAQACEAMQAAABvRcStUI1qZFqin//xAAcEAACAwADAQAAAAAAAAAAAAABAgADBBEUIzH/2gAIAQEAAQUC0sRZoZlDfdR9tD8VtNFQsnVSGf/EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/ASE//8QAFREBAQAAAAAAAAAAAAAAAAAAASD/2gAIAQIBAT8BY//EAB0QAAEEAwEBAAAAAAAAAAAAAAEAAhARAyExUXH/2gAIAQEABj8CxBpIs7TTZ7GH6tewLJXXR//EAB0QAAIDAAIDAAAAAAAAAAAAAAERACExEEFxkeH/2gAIAQEAAT8h6bAu4NAwoquBA3XxBALtLImpR4nkdvuE2PE//9oADAMBAAIAAwAAABCcDwD/xAAXEQADAQAAAAAAAAAAAAAAAAABECEx/9oACAEDAQE/EAEWF//EABURAQEAAAAAAAAAAAAAAAAAABAB/9oACAECAQE/EBT/xAAeEAEAAgICAwEAAAAAAAAAAAABABEhMVFxQWGB0f/aAAgBAQABPxC7bIGlMb5MxRFYNT949TV1GsQmtdw5FxWjFOrmnqOKjguG65HiYVvPn8IaC7j/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Тут средней текучести"
+        title="Тут средней текучести"
+        src="/static/1937e8fcd686f6efb15f877bfe4e656f/6aca1/8d34b9543b2860db4e9f2bef2cc1296f2478ed53cd0f132228c79a1e727a5a80.jpg"
+        srcset="/static/1937e8fcd686f6efb15f877bfe4e656f/d2f63/8d34b9543b2860db4e9f2bef2cc1296f2478ed53cd0f132228c79a1e727a5a80.jpg 163w,
+/static/1937e8fcd686f6efb15f877bfe4e656f/c989d/8d34b9543b2860db4e9f2bef2cc1296f2478ed53cd0f132228c79a1e727a5a80.jpg 325w,
+/static/1937e8fcd686f6efb15f877bfe4e656f/6aca1/8d34b9543b2860db4e9f2bef2cc1296f2478ed53cd0f132228c79a1e727a5a80.jpg 650w,
+/static/1937e8fcd686f6efb15f877bfe4e656f/3accd/8d34b9543b2860db4e9f2bef2cc1296f2478ed53cd0f132228c79a1e727a5a80.jpg 704w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>Я покупаю шоколад как на фото выше, и добавляю туда 5% какао-масла в каллетах
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50.920245398773%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIFAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAABfGdTmlOMP//EABsQAAMAAgMAAAAAAAAAAAAAAAECAwAEEjIz/9oACAEBAAEFAqVFYOwZa2HNcHXY9P/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAEEAwAAAAAAAAAAAAAAAAADEBGBIVFx/9oACAEBAAY/Ap0J9MFtR//EAB0QAAICAgMBAAAAAAAAAAAAAAABETEhQVGBkbH/2gAIAQEAAT8hVZV9ZLOYRdF0dKjjoKoY2fMf/9oADAMBAAIAAwAAABA4H//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAwEBPxAhwv/EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPxBcn//EABsQAQACAwEBAAAAAAAAAAAAAAEAESExYUFR/9oACAEBAAE/EAcTdqwI1sPIBSrC0SHylzY9HjyGIAccmFDAYJ//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="7.5кг бельгийких кувертюров"
+        title="7.5кг бельгийких кувертюров"
+        src="/static/7f83cd02df7d7979c1ea93037ab9220b/6aca1/01cc157339ebfd6018f368e3619180a00c0876a2e06a5cc8c2d43c2bda3b512e.jpg"
+        srcset="/static/7f83cd02df7d7979c1ea93037ab9220b/d2f63/01cc157339ebfd6018f368e3619180a00c0876a2e06a5cc8c2d43c2bda3b512e.jpg 163w,
+/static/7f83cd02df7d7979c1ea93037ab9220b/c989d/01cc157339ebfd6018f368e3619180a00c0876a2e06a5cc8c2d43c2bda3b512e.jpg 325w,
+/static/7f83cd02df7d7979c1ea93037ab9220b/6aca1/01cc157339ebfd6018f368e3619180a00c0876a2e06a5cc8c2d43c2bda3b512e.jpg 650w,
+/static/7f83cd02df7d7979c1ea93037ab9220b/7c09c/01cc157339ebfd6018f368e3619180a00c0876a2e06a5cc8c2d43c2bda3b512e.jpg 975w,
+/static/7f83cd02df7d7979c1ea93037ab9220b/58406/01cc157339ebfd6018f368e3619180a00c0876a2e06a5cc8c2d43c2bda3b512e.jpg 1110w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 508px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 96.31901840490798%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAeqqz51tQaTTgJbQn//EABsQAAICAwEAAAAAAAAAAAAAAAACARASITEy/9oACAEBAAEFAq2N5ypiOq0yf//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/AQhP/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQIQ/9oACAECAQE/AapHHP/EABYQAAMAAAAAAAAAAAAAAAAAAAAwMf/aAAgBAQAGPwJFP//EAB0QAAIDAAIDAAAAAAAAAAAAAAABESExQVFhcYH/2gAIAQEAAT8hJXFnoRTWK2x00JwtnyZKfQictvZ//9oADAMBAAIAAwAAABC4z3//xAAWEQEBAQAAAAAAAAAAAAAAAAABABD/2gAIAQMBAT8QBNN//8QAGBEBAQADAAAAAAAAAAAAAAAAAQAQETH/2gAIAQIBAT8Q0AIxOX//xAAcEAEAAwEAAwEAAAAAAAAAAAABABEhMVFxgbH/2gAIAQEAAT8QWhXkG68KJa4D2wIIK1vVJhDbixlSfc3casvI0Q4QtY0FU/J//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="3c576ed190aeab8459ddc89f63bf52b8a6dad0f3f4851cddc17ed15d9218b423"
+        title="3c576ed190aeab8459ddc89f63bf52b8a6dad0f3f4851cddc17ed15d9218b423"
+        src="/static/e4fe2757a11bfeae2128ae27be81eb40/a2d2e/3c576ed190aeab8459ddc89f63bf52b8a6dad0f3f4851cddc17ed15d9218b423.jpg"
+        srcset="/static/e4fe2757a11bfeae2128ae27be81eb40/d2f63/3c576ed190aeab8459ddc89f63bf52b8a6dad0f3f4851cddc17ed15d9218b423.jpg 163w,
+/static/e4fe2757a11bfeae2128ae27be81eb40/c989d/3c576ed190aeab8459ddc89f63bf52b8a6dad0f3f4851cddc17ed15d9218b423.jpg 325w,
+/static/e4fe2757a11bfeae2128ae27be81eb40/a2d2e/3c576ed190aeab8459ddc89f63bf52b8a6dad0f3f4851cddc17ed15d9218b423.jpg 508w"
+        sizes="(max-width: 508px) 100vw, 508px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+Шоколад в упаковках так же находится в каллетах (каплях).</p>
+<p>**На закрытие формы нужно примерно 300гр шоколада. **</p>
+<p>Берем нужное количество шоколада, смешиваем с 5% какао-масла, ставим в микороволновку и интервалами по 15-5 секунд раставливаем до температуры 45 градусов, после каждой итерации помешиваем, чтобы какая-то опеределенная часть не перегревалась.</p>
+<p>Далее емкость в растопленным шоколадом, ставим в емкость с холодной водой с кусочками льда (по принципу водяной бани) и мешаем пока температура не упадет до 27 градусов.</p>
+<p>Проверить все ли ок, можно капнув каплю шоколада на холодное керамическое блюдце. Через минуту капля должна стать матовой, если все хорошо, можно двигаться дальше.</p>
+<p>27 градусов это довольно густой шоколад, если залить такой в форму, то корпус будет толстый и вместится меньше начинки, а шоколада уйдет больше. Поэтому этот шоколад нужно разогреть в микроволновке до 30 градусов, буквально на несколько секунд поставив шоколад в печь.</p>
+<p>Шоколад готов, переливаем его в кондителский мешок или по-колхозному льем прямо из миски в ячейки формы. Когда залили, нужно постучать формой по столу, создавая вибрации, чтобы выстучать пузырьки. Потом форму переворачиваем <strong>(!!!)</strong> и не поднимаем пока не сделаем все что дальше, выливаем лишний шоколад на пергамент для выпекания. стучим по форме силиконовой ложкой или типо того, чтобы выстучать излишки шоколада. Шпателем убираем свисшие капли шоколада.</p>
+<p>В перевернутом виде оставляем кристаллизоваться на 20-30 минут в комнате с температурой 18-20 градусом. перевернутой форму оставляем чтобы шоколад не стекал вверх и не было скопления шоколада в верхушке. Так он будет стекать на края равномерно.</p>
+<p>После этого можно убрать в холодильник для дальнейшей кристаллизации.</p>
+<p><strong>До конца приготовления форму переворачивать нельзя</strong></p>
+<p>Весь процесс заливки можно посмотреть тут:</p>
+<p><div class="gatsby-resp-iframe-wrapper" style="padding-bottom: 56.42857142857143%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem" > <div class="embedVideo-container"> <iframe title="" src="https://www.youtube.com/embed/nHsdBpp4inQ?rel=0" class="embedVideo-iframe" style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; " loading="lazy" allowfullscreen=""></iframe> </div> </div></p>
+<h3 id="шаг-5-начинка" style="position:relative;"><a href="#%D1%88%D0%B0%D0%B3-5-%D0%BD%D0%B0%D1%87%D0%B8%D0%BD%D0%BA%D0%B0" aria-label="шаг 5 начинка permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Шаг 5: Начинка</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 51.533742331288344%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEEAgX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAcqplc8sNv/EABoQAAICAwAAAAAAAAAAAAAAAAABAhEhIjP/2gAIAQEAAQUCk9rMkurKP//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/AWf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAcEAACAAcAAAAAAAAAAAAAAAAAARAxUXGBouH/2gAIAQEABj8Cd6M6yewsx//EABwQAAICAgMAAAAAAAAAAAAAAAABEVEhQYGh4f/aAAgBAQABPyGZz3R34NImUuAmkdcLgSUj/9oADAMBAAIAAwAAABD/AA//xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAIAQMBAT8Qwr//xAAWEQADAAAAAAAAAAAAAAAAAAABECH/2gAIAQIBAT8QFX//xAAdEAEAAgICAwAAAAAAAAAAAAABACERUTFhcaGx/9oACAEBAAE/EDKBmb5B06hhFg4u4avz7iyujlaOolJVMmO6gNwmC/Kf/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Не пинайте за фундук, так получилось :О "
+        title="Не пинайте за фундук, так получилось :О "
+        src="/static/aeb015c95a214019509b8a56d0f2b0ea/6aca1/ee50e9f235c82fd9b3ddbfb62a58d9f90c5f14c773c2682c141e87b15964003d.jpg"
+        srcset="/static/aeb015c95a214019509b8a56d0f2b0ea/d2f63/ee50e9f235c82fd9b3ddbfb62a58d9f90c5f14c773c2682c141e87b15964003d.jpg 163w,
+/static/aeb015c95a214019509b8a56d0f2b0ea/c989d/ee50e9f235c82fd9b3ddbfb62a58d9f90c5f14c773c2682c141e87b15964003d.jpg 325w,
+/static/aeb015c95a214019509b8a56d0f2b0ea/6aca1/ee50e9f235c82fd9b3ddbfb62a58d9f90c5f14c773c2682c141e87b15964003d.jpg 650w,
+/static/aeb015c95a214019509b8a56d0f2b0ea/7c09c/ee50e9f235c82fd9b3ddbfb62a58d9f90c5f14c773c2682c141e87b15964003d.jpg 975w,
+/static/aeb015c95a214019509b8a56d0f2b0ea/f4296/ee50e9f235c82fd9b3ddbfb62a58d9f90c5f14c773c2682c141e87b15964003d.jpg 1146w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>Начинка для конфет - это ганаш, марципан, жидкие ликеры и т.д.</p>
+<p><strong>ВАЖНО:</strong> чем больше воды в начинке, тем меньше срок годности. Срок годности твердых начинок может быть пол года, а всякие суфле на основе яиц - месяц. Вообще я рекомендую употребить любые конфеты в течении двух-трех недель. Таким образом вы точно не ошибетесь и не отравитесь испорченным продуктом с практически любой начинкой.</p>
+<p>На промышленных производствах есть специальные устройства, которые измеряют количество воды и расчитывают срок годности, цена такого устройства от 500 долларов и выше.</p>
+<h4 id="марципан" style="position:relative;"><a href="#%D0%BC%D0%B0%D1%80%D1%86%D0%B8%D0%BF%D0%B0%D0%BD" aria-label="марципан permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Марципан</h4>
+<p>Самая простая начинка - марципан. Покупаем марципановый хлеб, накатываем шарики, кладем в ячейку, разравниваем руками - все, вы прекрасны.
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 48.46625766871166%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEA//EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAFUWeXQhD//xAAZEAACAwEAAAAAAAAAAAAAAAAAAQIDERP/2gAIAQEAAQUCVg5HRoxbIZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAZEAACAwEAAAAAAAAAAAAAAAAAMgEQMTP/2gAIAQEABj8C6yOMZf8A/8QAHRAAAQMFAQAAAAAAAAAAAAAAAAEhMRARQVGRwf/aAAgBAQABPyFjxG8loGo4IS0Ez//aAAwDAQACAAMAAAAQkC//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCn/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEh/9oACAECAQE/ELGv/8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFRYXHB8P/aAAgBAQABPxByhRZWfb7JVvoLwl4+IOS+W9SkhT4cVAYg1o6in//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Как-то так"
+        title="Как-то так"
+        src="/static/10343523e38dda9ce651ba0b1ee8e17d/6aca1/e670bf040b5ac1e4535143dbf781b606280e61904adc498d6c113bd106863924.jpg"
+        srcset="/static/10343523e38dda9ce651ba0b1ee8e17d/d2f63/e670bf040b5ac1e4535143dbf781b606280e61904adc498d6c113bd106863924.jpg 163w,
+/static/10343523e38dda9ce651ba0b1ee8e17d/c989d/e670bf040b5ac1e4535143dbf781b606280e61904adc498d6c113bd106863924.jpg 325w,
+/static/10343523e38dda9ce651ba0b1ee8e17d/6aca1/e670bf040b5ac1e4535143dbf781b606280e61904adc498d6c113bd106863924.jpg 650w,
+/static/10343523e38dda9ce651ba0b1ee8e17d/7c09c/e670bf040b5ac1e4535143dbf781b606280e61904adc498d6c113bd106863924.jpg 975w,
+/static/10343523e38dda9ce651ba0b1ee8e17d/97cd8/e670bf040b5ac1e4535143dbf781b606280e61904adc498d6c113bd106863924.jpg 1060w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h4 id="джандуя" style="position:relative;"><a href="#%D0%B4%D0%B6%D0%B0%D0%BD%D0%B4%D1%83%D1%8F" aria-label="джандуя permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Джандуя</h4>
+<p>Еще одна базовая начинка - <strong>Джандуя</strong>, рецепт можно глянуть <a href="https://thecake-school.ru/blog/recipe/dzhandujya-shokoladno-orexovaya-pasta">тут</a>. Перед заливкой в форму нужно подогреть до 29 градусов, залить, поставить в холодильник чтоб загустела, закрыть дно.
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.14723926380368%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAE/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAUJwlS0R/8QAGRAAAgMBAAAAAAAAAAAAAAAAAAIBEDER/9oACAEBAAEFAum0xGsf/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8Bqv/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/AYj/xAAZEAACAwEAAAAAAAAAAAAAAAAAARARMXH/2gAIAQEABj8CujDBQuH/xAAaEAACAgMAAAAAAAAAAAAAAAABEQAhIDGR/9oACAEBAAE/ISNs7GSVJvBc/9oADAMBAAIAAwAAABDH7//EABYRAQEBAAAAAAAAAAAAAAAAAAARIf/aAAgBAwEBPxDCn//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCGH//EAB0QAQEAAgIDAQAAAAAAAAAAAAERACFBYTFRcZH/2gAIAQEAAT8QLwRB26nWGp0blp+4Q27zfeaJNExIEUbnl8s//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Миндальная джандуя"
+        title="Миндальная джандуя"
+        src="/static/e2e14beaa87658e8ddd76fc422964604/6aca1/ddab2b715130394cbd2e065b61bb9e9224f3f2fcc6567f8fa0573f80a0bca2d3.jpg"
+        srcset="/static/e2e14beaa87658e8ddd76fc422964604/d2f63/ddab2b715130394cbd2e065b61bb9e9224f3f2fcc6567f8fa0573f80a0bca2d3.jpg 163w,
+/static/e2e14beaa87658e8ddd76fc422964604/c989d/ddab2b715130394cbd2e065b61bb9e9224f3f2fcc6567f8fa0573f80a0bca2d3.jpg 325w,
+/static/e2e14beaa87658e8ddd76fc422964604/6aca1/ddab2b715130394cbd2e065b61bb9e9224f3f2fcc6567f8fa0573f80a0bca2d3.jpg 650w,
+/static/e2e14beaa87658e8ddd76fc422964604/7c09c/ddab2b715130394cbd2e065b61bb9e9224f3f2fcc6567f8fa0573f80a0bca2d3.jpg 975w,
+/static/e2e14beaa87658e8ddd76fc422964604/47311/ddab2b715130394cbd2e065b61bb9e9224f3f2fcc6567f8fa0573f80a0bca2d3.jpg 1080w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h4 id="ликерымедetc" style="position:relative;"><a href="#%D0%BB%D0%B8%D0%BA%D0%B5%D1%80%D1%8B%D0%BC%D0%B5%D0%B4etc" aria-label="ликерымедetc permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ликеры/Мед/etc</h4>
+<p>Жидкие начинки сложны для новичков, т.к. есть куча видов, и сложно закрыть дно. Есть совсем жидкие и с сахарным корпусом (как правило алкогольные).
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 60.122699386503065%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAc6taRsGA//EABkQAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAgBAQABBQKLuA8AG11qhn//xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQMBAT8BjL//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEv/aAAgBAgEBPwGlv//EAB4QAAEBCQAAAAAAAAAAAAAAAAAQAQIREiExQXGR/9oACAEBAAY/ArFJX9mepBif/8QAGxAAAwACAwAAAAAAAAAAAAAAAAERITFBYaH/2gAIAQEAAT8hrm06NxYPXAQ0noYSYaJhcYlD/9oADAMBAAIAAwAAABAY/wD/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxAh/8QAFREBAQAAAAAAAAAAAAAAAAAAEQD/2gAIAQIBAT8QQyv/xAAbEAEBAAMAAwAAAAAAAAAAAAABEQAhQTFxwf/aAAgBAQABPxBY7ElTN/MVonjknt6+8YJa3dz3uE8wCj2scQUDdbcAAGs//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Конфеты с Куантро"
+        title="Конфеты с Куантро"
+        src="/static/3ae6b28ddf74c1af73976e08da3e76e4/6aca1/f44ecdab3da75c8b6bf22d582090685239a9af4a844ff059edd4b443cdba4d53.jpg"
+        srcset="/static/3ae6b28ddf74c1af73976e08da3e76e4/d2f63/f44ecdab3da75c8b6bf22d582090685239a9af4a844ff059edd4b443cdba4d53.jpg 163w,
+/static/3ae6b28ddf74c1af73976e08da3e76e4/c989d/f44ecdab3da75c8b6bf22d582090685239a9af4a844ff059edd4b443cdba4d53.jpg 325w,
+/static/3ae6b28ddf74c1af73976e08da3e76e4/6aca1/f44ecdab3da75c8b6bf22d582090685239a9af4a844ff059edd4b443cdba4d53.jpg 650w,
+/static/3ae6b28ddf74c1af73976e08da3e76e4/7c09c/f44ecdab3da75c8b6bf22d582090685239a9af4a844ff059edd4b443cdba4d53.jpg 975w,
+/static/3ae6b28ddf74c1af73976e08da3e76e4/e64de/f44ecdab3da75c8b6bf22d582090685239a9af4a844ff059edd4b443cdba4d53.jpg 1099w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>Для конфет с ликером и сахарным корпусом готовится перенасыщенный сахаром сироп, заливается в ячейки, 12 часов кристаллизуется ликер, закрываем шоколадом и все.</p>
+<p>Если без сахарного корпуса, то после наполнения формы начинкой для закрытия формы нужен тонкий кондитерский лист из пластика формата А4, на него ровным слоем наносим шоколад, лист кладется на форму, шпателем разравниваем шоколад и оставляем вместе с листом застывать, потом лист убираем, остатки шоколада обламываем, конфеты достаем.</p>
+<h4 id="ганаш" style="position:relative;"><a href="#%D0%B3%D0%B0%D0%BD%D0%B0%D1%88" aria-label="ганаш permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ганаш</h4>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 603px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 98.15950920245399%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQDAv/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABn6p0yxq1U7CZhv/EABoQAAIDAQEAAAAAAAAAAAAAAAABAhESMSH/2gAIAQEAAQUCUTFHqM0ZFCQ+RVj7/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAGxAAAQUBAQAAAAAAAAAAAAAAAAEQESExYSL/2gAIAQEABj8C4pw8zBhtFYyt/8QAHRABAAMAAgMBAAAAAAAAAAAAAQARIUFhMXGBkf/aAAgBAQABPyHAQT9JYNXfrYNgvhN0V1UpZaBFl59J4nmBoczcf//aAAwDAQACAAMAAAAQ/DDC/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPxAf/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAERQf/aAAgBAgEBPxCtrqP/xAAcEAEBAQEBAAMBAAAAAAAAAAABEQAhQZGxwdH/2gAIAQEAAT8Qc4LqIo9wgisVqNSWHxv5oSvJ2e4ISixYXGVpUH+tx4SfetQZHwakVTyDv//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Кокосовый ганаш с ванилью"
+        title="Кокосовый ганаш с ванилью"
+        src="/static/92ededc2229b9dbd8c448707364237e4/48d5f/6bee59425b4f67768ee0fbdd7b8e3bca339d65232f96ae2f90c5b462d930eeda.jpg"
+        srcset="/static/92ededc2229b9dbd8c448707364237e4/d2f63/6bee59425b4f67768ee0fbdd7b8e3bca339d65232f96ae2f90c5b462d930eeda.jpg 163w,
+/static/92ededc2229b9dbd8c448707364237e4/c989d/6bee59425b4f67768ee0fbdd7b8e3bca339d65232f96ae2f90c5b462d930eeda.jpg 325w,
+/static/92ededc2229b9dbd8c448707364237e4/48d5f/6bee59425b4f67768ee0fbdd7b8e3bca339d65232f96ae2f90c5b462d930eeda.jpg 603w"
+        sizes="(max-width: 603px) 100vw, 603px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+<strong>База для ганаша следующая:</strong></p>
+<ul>
+<li>110г  шоколада</li>
+<li>18г сиропа глюкозы</li>
+<li>80г любого фруктового пюре</li>
+<li>10г сливок 33–35%</li>
+</ul>
+<p><strong>Готовится так:</strong>
+Соединим фруктовое пюре и сливки с сиропом глюкозы. Нагреваем до кипения и выливаем на шоколад. Погружным блендером пробиваем до однородной структуры. переливаем в кондитерский мешок и катаем по прохладному столу. Хранить можно в холодильнике, перед заполнением формы подогреваем до 29-30 градусов.</p>
+<p><strong>ВАЖНО:</strong>  Самым сложнным навыком тут было не перелить начинки, нужно чтобы пара миллиметро не закрывалось до краев, как на фото ниже, если так вышло, что перелили начинки, убрать лишнее можно зубочисткой или шприцом.
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 65.03067484662577%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAgME/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAFXvDIqpzln/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQIAAxEhE//aAAgBAQABBQJeRQWPjkRdlPK7CVb/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAdEAACAQQDAAAAAAAAAAAAAAAAIQECERIiQVFx/9oACAEBAAY/AkJm1VpGZcyjv0//xAAbEAADAAIDAAAAAAAAAAAAAAAAARExUSGB8P/aAAgBAQABPyGME9smFpiVUl6qIZ5Ql8cvREyH/9oADAMBAAIAAwAAABCH/wD/xAAXEQADAQAAAAAAAAAAAAAAAAAAARGB/9oACAEDAQE/ELEaf//EABYRAQEBAAAAAAAAAAAAAAAAAAARYf/aAAgBAgEBPxBcf//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExYXGBkf/aAAgBAQABPxAbSZpTaerj5gZ6pqy9vL81kKgsxDwMSqhoePzAX2VDN01jFpZRpTq5/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Проблемные места"
+        title="Проблемные места"
+        src="/static/7478c8d116a701b894e76e2935edc525/6aca1/9a97d61d8cfa6846174a541a0a805091791a1909bc9f5bc1e11b9713343651fc.jpg"
+        srcset="/static/7478c8d116a701b894e76e2935edc525/d2f63/9a97d61d8cfa6846174a541a0a805091791a1909bc9f5bc1e11b9713343651fc.jpg 163w,
+/static/7478c8d116a701b894e76e2935edc525/c989d/9a97d61d8cfa6846174a541a0a805091791a1909bc9f5bc1e11b9713343651fc.jpg 325w,
+/static/7478c8d116a701b894e76e2935edc525/6aca1/9a97d61d8cfa6846174a541a0a805091791a1909bc9f5bc1e11b9713343651fc.jpg 650w,
+/static/7478c8d116a701b894e76e2935edc525/7c09c/9a97d61d8cfa6846174a541a0a805091791a1909bc9f5bc1e11b9713343651fc.jpg 975w,
+/static/7478c8d116a701b894e76e2935edc525/1250c/9a97d61d8cfa6846174a541a0a805091791a1909bc9f5bc1e11b9713343651fc.jpg 1178w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 30.67484662576687%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAHGglcBv//EABgQAAMBAQAAAAAAAAAAAAAAAAABAhES/9oACAEBAAEFAspiVk9H/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8BZ//EABkQAAIDAQAAAAAAAAAAAAAAAAABAiExMv/aAAgBAQAGPwLR8jqOn//EABgQAAMBAQAAAAAAAAAAAAAAAAABETEh/9oACAEBAAE/IUlzeUSUVkqHWAf/2gAMAwEAAgADAAAAEHQf/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAgBAwEBPxBPSH//xAAWEQADAAAAAAAAAAAAAAAAAAABECH/2gAIAQIBAT8QCL//xAAaEAEBAQADAQAAAAAAAAAAAAABEQAxQVGx/9oACAEBAAE/EGqPiLE51mEP2esKURSDv//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Вот так орех с фото выше не закрылся, бракованная конфета :), лишнюю начинку убрал"
+        title="Вот так орех с фото выше не закрылся, бракованная конфета :), лишнюю начинку убрал"
+        src="/static/7ad5aa968f976554728e300e095ba2c1/6aca1/6189f833c0b1820b03e61ecacfc2ec06cbcc046c76efe91fc1d277b2eabafeed.jpg"
+        srcset="/static/7ad5aa968f976554728e300e095ba2c1/d2f63/6189f833c0b1820b03e61ecacfc2ec06cbcc046c76efe91fc1d277b2eabafeed.jpg 163w,
+/static/7ad5aa968f976554728e300e095ba2c1/c989d/6189f833c0b1820b03e61ecacfc2ec06cbcc046c76efe91fc1d277b2eabafeed.jpg 325w,
+/static/7ad5aa968f976554728e300e095ba2c1/6aca1/6189f833c0b1820b03e61ecacfc2ec06cbcc046c76efe91fc1d277b2eabafeed.jpg 650w,
+/static/7ad5aa968f976554728e300e095ba2c1/7c09c/6189f833c0b1820b03e61ecacfc2ec06cbcc046c76efe91fc1d277b2eabafeed.jpg 975w,
+/static/7ad5aa968f976554728e300e095ba2c1/2e558/6189f833c0b1820b03e61ecacfc2ec06cbcc046c76efe91fc1d277b2eabafeed.jpg 1193w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h3 id="шаг-6-закрываем-корпус-и-выстукиваем-конфеты" style="position:relative;"><a href="#%D1%88%D0%B0%D0%B3-6-%D0%B7%D0%B0%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-%D0%B8-%D0%B2%D1%8B%D1%81%D1%82%D1%83%D0%BA%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82%D1%8B" aria-label="шаг 6 закрываем корпус и выстукиваем конфеты permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Шаг 6: Закрываем корпус и выстукиваем конфеты</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.44171779141104%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHKtaToh1gX/8QAGxAAAQQDAAAAAAAAAAAAAAAAAgABAxESMTP/2gAIAQEAAQUCOYiWLp3O4th1pf/EABcRAQEBAQAAAAAAAAAAAAAAAAEAEUH/2gAIAQMBAT8BDraX/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGxAAAQQDAAAAAAAAAAAAAAAAAAECECEiMVH/2gAIAQEABj8CxpCzY4anY//EABwQAQACAwADAAAAAAAAAAAAAAEAESExQWGRwf/aAAgBAQABPyF1LV6IYLeKvk2S91UAs7r7EvAM1iUMBqf/2gAMAwEAAgADAAAAEAMf/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQBh/9oACAEDAQE/EBCMr//EABcRAQEBAQAAAAAAAAAAAAAAAAERAFH/2gAIAQIBAT8QVsNHu//EABsQAQACAwEBAAAAAAAAAAAAAAEAESFRYTFB/9oACAEBAAE/EKmJ6MvbMzDEF8dLFNS+t6M40kEK/o5+COhpKPTHIGAAKDRP/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="0aef5e1445c95750be37c6b2534502ce9c980651f0932627ae4bee458231340d"
+        title="0aef5e1445c95750be37c6b2534502ce9c980651f0932627ae4bee458231340d"
+        src="/static/f3dc32fa9d9672095fe3f8450399e279/6aca1/0aef5e1445c95750be37c6b2534502ce9c980651f0932627ae4bee458231340d.jpg"
+        srcset="/static/f3dc32fa9d9672095fe3f8450399e279/d2f63/0aef5e1445c95750be37c6b2534502ce9c980651f0932627ae4bee458231340d.jpg 163w,
+/static/f3dc32fa9d9672095fe3f8450399e279/c989d/0aef5e1445c95750be37c6b2534502ce9c980651f0932627ae4bee458231340d.jpg 325w,
+/static/f3dc32fa9d9672095fe3f8450399e279/6aca1/0aef5e1445c95750be37c6b2534502ce9c980651f0932627ae4bee458231340d.jpg 650w,
+/static/f3dc32fa9d9672095fe3f8450399e279/7c09c/0aef5e1445c95750be37c6b2534502ce9c980651f0932627ae4bee458231340d.jpg 975w,
+/static/f3dc32fa9d9672095fe3f8450399e279/ec605/0aef5e1445c95750be37c6b2534502ce9c980651f0932627ae4bee458231340d.jpg 1125w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>После того как форма с начинкой остыла в холодильнике а начинка стала гуще, достаем форму, даем ей нагреться до +- комнатной температуры.</p>
+<p>Сверху по ячейкам проходимся феном, но не сильно, буквально чтобы подогреть.</p>
+<p>Подготавливаем шоколад как описано в <strong><a href="#%D1%88%D0%B0%D0%B3-4-%D0%B7%D0%B0%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%88%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%82%D1%8B">шаге 4</a></strong>, наливаем его сверху  корпуса и шпателем убираем излишки. Оставляем на 20-30 минут для кристаллизации и убираем в холодильник на пару часов. В холоде какао-масло сжимается, что позволяет ему отойти от формы.</p>
+<p>Все, осталось выбить конфеты из корпуса.</p>
+<p><div class="gatsby-resp-iframe-wrapper" style="padding-bottom: 56.42857142857143%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem" > <div class="embedVideo-container"> <iframe title="" src="https://www.youtube.com/embed/ahSOuv7kgTE?rel=0" class="embedVideo-iframe" style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; " loading="lazy" allowfullscreen=""></iframe> </div> </div></p>
+<h3 id="шаг-7-вы-прекрасны" style="position:relative;"><a href="#%D1%88%D0%B0%D0%B3-7-%D0%B2%D1%8B-%D0%BF%D1%80%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D1%8B" aria-label="шаг 7 вы прекрасны permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Шаг 7: Вы прекрасны</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 39.877300613496935%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAID/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAGICtRZ/8QAFxABAQEBAAAAAAAAAAAAAAAAAQISAP/aAAgBAQABBQJp0tPQuf/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAAMBAQAAAAAAAAAAAAAAAAABIVFx/9oACAEBAAY/AsXBRlP/xAAaEAACAgMAAAAAAAAAAAAAAAABIQARUWFx/9oACAEBAAE/IVTB1F4GaURCb3P/2gAMAwEAAgADAAAAEAAv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhABAQACAwAAAAAAAAAAAAAAAREAQSFR0f/aAAgBAQABPxBDBvBpfMEILeanUOsMFipUVM//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="49c145864223a91082013201022477d67dacf1478161076af80b427cfa1f1e0d"
+        title="49c145864223a91082013201022477d67dacf1478161076af80b427cfa1f1e0d"
+        src="/static/dee8b5487c085989c4173efa6250ec0b/6aca1/49c145864223a91082013201022477d67dacf1478161076af80b427cfa1f1e0d.jpg"
+        srcset="/static/dee8b5487c085989c4173efa6250ec0b/d2f63/49c145864223a91082013201022477d67dacf1478161076af80b427cfa1f1e0d.jpg 163w,
+/static/dee8b5487c085989c4173efa6250ec0b/c989d/49c145864223a91082013201022477d67dacf1478161076af80b427cfa1f1e0d.jpg 325w,
+/static/dee8b5487c085989c4173efa6250ec0b/6aca1/49c145864223a91082013201022477d67dacf1478161076af80b427cfa1f1e0d.jpg 650w,
+/static/dee8b5487c085989c4173efa6250ec0b/d0b15/49c145864223a91082013201022477d67dacf1478161076af80b427cfa1f1e0d.jpg 969w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h3 id="все" style="position:relative;"><a href="#%D0%B2%D1%81%D0%B5" aria-label="все permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Все</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 636px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 69.93865030674846%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/aAAwDAQACEAMQAAAB5bxd8zJFP//EABcQAQEBAQAAAAAAAAAAAAAAAAEAEiD/2gAIAQEAAQUCy2WROP/EABYRAAMAAAAAAAAAAAAAAAAAAAEQMv/aAAgBAwEBPwESv//EABcRAAMBAAAAAAAAAAAAAAAAAAECECL/2gAIAQIBAT8BYan/xAAYEAACAwAAAAAAAAAAAAAAAAAAESAhMv/aAAgBAQAGPwJoyXD/xAAbEAADAAIDAAAAAAAAAAAAAAAAAREQMSFBgf/aAAgBAQABPyFR2qEp52NYkOzjH//aAAwDAQACAAMAAAAQtM//xAAYEQACAwAAAAAAAAAAAAAAAAABERCR8P/aAAgBAwEBPxA0SOqP/8QAGREAAwADAAAAAAAAAAAAAAAAAAERIYHw/9oACAECAQE/EKJjfMVP/8QAHBABAQACAgMAAAAAAAAAAAAAAREAIRAxQVGR/9oACAEBAAE/ENfC+SZagbO1b+4QoJYuCGxT1cGOo8f/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="34a95a54b069ad227e7a5ddf8c739b09a2f900cd41dfeca48e675d1da0644115"
+        title="34a95a54b069ad227e7a5ddf8c739b09a2f900cd41dfeca48e675d1da0644115"
+        src="/static/21dfa1395c3021a09985b241bd0ec6b8/c60f3/34a95a54b069ad227e7a5ddf8c739b09a2f900cd41dfeca48e675d1da0644115.jpg"
+        srcset="/static/21dfa1395c3021a09985b241bd0ec6b8/d2f63/34a95a54b069ad227e7a5ddf8c739b09a2f900cd41dfeca48e675d1da0644115.jpg 163w,
+/static/21dfa1395c3021a09985b241bd0ec6b8/c989d/34a95a54b069ad227e7a5ddf8c739b09a2f900cd41dfeca48e675d1da0644115.jpg 325w,
+/static/21dfa1395c3021a09985b241bd0ec6b8/c60f3/34a95a54b069ad227e7a5ddf8c739b09a2f900cd41dfeca48e675d1da0644115.jpg 636w"
+        sizes="(max-width: 636px) 100vw, 636px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p></section><hr/><footer><div class="bio"><div class="bio-avatar gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:75px;height:75px"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEkElEQVQ4y12U224bVRSGd6y2aWb2HD0+xfb4fIydJriOnTqJmzp2GhSHnnGaygoUQlOVIkAIgQQSV0gICck8iJ+Al+AFfJErnmHs/bNm7CJgpK3ZM2vmW/+/1pphiiIzd3Eus4Au+SxdZhlLkuJ+eZi35HExzK+KEdWpJiwnsWpeRUx5bBrqUFW4ZGoq0zXVxz0G9zhsAVxiTGV+bYVZujRI+uVJxuIoBDiyARm2JaO8qiNkqYj6OQxdAYEmhqYOVFVhS9eueYx/gMvL1xlXNHc/UlUZUVNC1i87WYs7uYA8ywa5qK5qIuxXZgGDO5qmuIugCkjZSNU4cw+65wF9c7l8RAtc4Y6uytMIQUmZSAcVkQ2pohjRBSkUBBGaykHKppqqOO47rpBQOMhIuW9hmQ/mAe4+IKgm8BtcBHQZuroCTb0J01ghiOSpUlUuVO+siMU7sALmQHeVci5JdGNCYAIq0wVYaBqHTXUr54LotHJ4/byBg+0UFFLn2jV0T617PaWGIp2ITL4YHkquwuEcxh3KCOqemxWurcuHm/jl8wP8/KaHny72cHFSQiysUlkUUqy5jfGeJaATj5gUM4YucPzOrmdlvsdqQMOXD2/jhw+b+O7JFp600tgpWbBDHDIpIoWe0nmJuGMa1CSdj13glQsg2Ez5l7qAqeB4o4Bnmxkcr8WQo3GxLYnGRoJJNVW9xszLQ85mC1FXbKEMC5jw9jQ6mmbgZbuPj7bXcFCNoZEw0SmEkA1JCJpUItVryjugUOfXzv+A84Bb7GVJxov2Fn57uofzehaH2SCO8hGEtRsUlzEH/FcILYdRgCx7wRnnXEgEWpHIliahX0vh9/MjXNaLuGv7sZ8OwlKuUznkheX5CBFwNocrnuWxpnvSHb+liVQqiMraKmrlMMpxDV/1m/i2u4ndmIE1+hRp0JFLWaRSgpt8YfmdS68pQ133MjnNmo1+ryj6nTw2iwG0SWF3PYnnGzbOyHa/GMU+NahKNc1lLKSTljevkiw7i8YOWTRsSDQGkxCNSa+ZnnbqSdASjXIIvUYWl4/uoh3T8UmziPNWiZKkcascRSEbENv1OO7U7Wk8ZhJMnmiqJjF27Qa7sXJzUM6E0W/lnMNGSnQbKYKnxHYpglcnO7g4auCkauPpXpWAGVSyIZFJ+N2vSNTXV53tWhzlYmhwa22VsV/fHPu+ed5mJ7ul0eN2Ee/fSTvdRnJ6dCeHRjEiPv1gT3x92hMv72+Jy+Md8XR/U2TiBrJx/zQTM50SgatZaxT2cxbUZR9rrdusEllm+VSIDTqV0cN2AYfNNLpbaadVsZ23p73ZxcmOeNGpidOD2qzTKDh2WHEKCQupsIZC3BwVEivsrz++Yhv5EGPNSpx1bqeXgD9Zr26zx+3C4MFufnKvlsR+LYtXj9v47NEevv/4AV4/u4dSJgA7oiId1Sd2UBnkbT+j/z1bSweW1nNBxk4Pquysu87O72+w/fds31mvyn582ZVa1diwVUmMLx7tXr09O3AI6LwdHF7Fw3ycjBnDeFSREkGFldKWr5jwsyKBy6kA+xtuJszsWe102AAAAABJRU5ErkJggg==" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/beb0168558a17dbb947a134587f2ded0/3cd4a/profile-pic.png 1x,
+/static/beb0168558a17dbb947a134587f2ded0/86a25/profile-pic.png 1.5x,
+/static/beb0168558a17dbb947a134587f2ded0/c81a9/profile-pic.png 2x" /><img loading="lazy" width="75" height="75" srcset="/static/beb0168558a17dbb947a134587f2ded0/3cd4a/profile-pic.png 1x,
+/static/beb0168558a17dbb947a134587f2ded0/86a25/profile-pic.png 1.5x,
+/static/beb0168558a17dbb947a134587f2ded0/c81a9/profile-pic.png 2x" src="/static/beb0168558a17dbb947a134587f2ded0/3cd4a/profile-pic.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>🍰 Pastry Chef<br/>🍫 Chocolate destroyer<br/>🌐 Links/Ссылки ⬇<br/><a href="https://links.padniuk.com/">https://links.padniuk.com/</a></p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2021/2021-02-26/index.en/">← <!-- -->How to make chocolates at home</a></li><li></li></ul></nav></main><footer>© <!-- -->2022<!-- -->,<!-- --> <a href="https://blog.padniuk.com">Evgeny Padniuk</a></footer><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/><div style="position:fixed;bottom:50px;right:30px;cursor:pointer;transition-duration:0.2s;transition-timing-function:linear;transition-delay:0s;opacity:0;visibility:hidden;transition-property:opacity, visibility"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-alt-circle-up" class="svg-inline--fa fa-arrow-alt-circle-up fa-w-16 fa-3x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 504c137 0 248-111 248-248S393 8 256 8 8 119 8 256s111 248 248 248zm0-448c110.5 0 200 89.5 200 200s-89.5 200-200 200S56 366.5 56 256 145.5 56 256 56zm20 328h-40c-6.6 0-12-5.4-12-12V256h-67c-10.7 0-16-12.9-8.5-20.5l99-99c4.7-4.7 12.3-4.7 17 0l99 99c7.6 7.6 2.2 20.5-8.5 20.5h-67v116c0 6.6-5.4 12-12 12z"></path></svg></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+        window.gatsbyLoadInstagram = function() {
+          var js = document.createElement('script');
+          var firstScript = document.getElementsByTagName('script')[0];
+          js.id = 'gatsby-plugin-instagram';
+          js.src = 'https://instagram.com/embed.js';
+
+          firstScript.parentNode.insertBefore(js, firstScript);
+
+          return true;
+        }
+      </script><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-190310634-2', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2021/2021-02-26/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-be86a901e9758c946004.js"],"app":["/app-eafe9f7f5559a7c09dc5.js"],"component---src-pages-404-js":["/component---src-pages-404-js-eff8d0b5a09414f0d74f.js"],"component---src-pages-index-js":["/component---src-pages-index-js-378790c0c08e2fe27bff.js"],"component---src-pages-tags-js":["/component---src-pages-tags-js-b755302cab96589f15b6.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-b61d42b7abe56f139417.js"]};/*]]>*/</script><script src="/polyfill-be86a901e9758c946004.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-b61d42b7abe56f139417.js" async=""></script><script src="/cd7d5f864fc9e15ed8adef086269b0aeff617554-3774ed16d12cf9c639fc.js" async=""></script><script src="/d5d7a013bc6c1e2b6d7db819052c16d7efea5559-279b6a4aab882080cc35.js" async=""></script><script src="/commons-5d427e649ac9dfd2f12c.js" async=""></script><script src="/app-eafe9f7f5559a7c09dc5.js" async=""></script><script src="/styles-55e82d6ff5158c00b714.js" async=""></script><script src="/framework-741ade27086b2708e961.js" async=""></script><script src="/webpack-runtime-3cdd441e5c79879a69cb.js" async=""></script></body></html>
