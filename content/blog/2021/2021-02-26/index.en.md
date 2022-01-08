@@ -1,5 +1,5 @@
 ---
-title: "How to made chocolates at home"
+title: "How to make chocolates at home"
 date: 2021-02-26
 published: false
 tags: ["Chocolate", "Bonbons"]
